@@ -1,0 +1,207 @@
+@use 'sass:math';
+@use '../basic/setting' as *;
+@use '../basic/variables' as *;
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 60px;
+
+  @include mq(tb) {
+    padding: 5px 10px;
+  }
+  @include mq(sp) {
+    padding: 5px 10px;
+  }
+
+  &_logo {
+    width: 30%;
+  }
+}
+
+.l-header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.l-header_menu-btn {
+  width: 90px;
+  height: 90px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+  background-color: transparent;
+  transition: border-color 0.3s;
+
+  @include mq(sp) {
+    width: 48px;
+    height: 48px;
+    border: 1.5px solid #000;
+  }
+
+  &.is-active {
+    border-color: #fff;
+  }
+
+  .l-header_menu-icon {
+    position: relative;
+    width: 24px;
+    height: 16px;
+    margin-bottom: 8px;
+    display: block;
+
+    @include mq(sp) {
+      width: 14px;
+      height: 12px;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #000;
+      transition: transform 0.3s, top 0.3s, background 0.3s;
+
+      @include mq(sp) {
+        height: 1.2px;
+      }
+    }
+
+    &::before {
+      top: 3px;
+    }
+
+    &::after {
+      top: 8px;
+    }
+  }
+
+  &.is-active .l-header_menu-icon::before {
+    top: 5px;
+    transform: rotate(45deg);
+    background: #fff;
+  }
+
+  &.is-active .l-header_menu-icon::after {
+    top: 5px;
+    transform: rotate(-45deg);
+    background: #fff;
+  }
+
+  // ← Menu画像（黒・白）切り替え
+  .l-header_menu-img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+
+    @include mq(sp) {
+      margin-top: 1px;
+    }
+
+    &.-white {
+      display: none;
+    }
+
+    &.-black {
+      display: block;
+    }
+  }
+
+  &.is-active {
+    .l-header_menu-img.-black {
+      display: none;
+    }
+
+    .l-header_menu-img.-white {
+      display: block;
+    }
+  }
+}
+
+/* グローバルメニュー */
+.l-global-nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 370px;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  z-index: 998;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: right 0.3s ease;
+  @include mq(sp) {
+    width: 100vw;
+  }
+
+  &.is-active {
+    right: 0;
+  }
+}
+
+.l-global-nav_close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 20px 2rem auto;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10001; // ← ここをもっと高くする（10000以上推奨）
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    pointer-events: auto; // ← 念のため明示
+  }
+}
+
+.l-global-nav_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &_group {
+    margin-bottom: 50px;
+  }
+
+  li {
+    width: 100%;
+    max-width: 180px;
+    text-align: left;
+  }
+
+  a,
+  span {
+    color: #fff;
+  }
+}
+
+.detail_menu {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 20px;
+}

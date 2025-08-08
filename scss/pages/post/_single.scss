@@ -1,0 +1,93 @@
+@use 'sass:math';
+@use '../../basic/setting' as *;
+@use '../../basic/variables' as *;
+
+.news-content-section {
+  padding: 200px 0;
+  @include mq(sp) {
+    padding: 150px 0;
+  }
+
+  .wrapper-min {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .news-content {
+    &__ttlBox {
+      border-bottom: 2px solid #000; // 黒い下線
+      margin-bottom: 50px;
+
+      &__inner {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        .time {
+          font-size: clampVw(15, 20, 20, 1200);
+          font-weight: bold;
+        }
+
+        .category {
+          font-size: clampVw(13, 15, 15, 1200);
+          padding: 7px 16px;
+          background: #f0f0f0;
+          margin-right: 0.5em;
+        }
+      }
+
+      h1 {
+        font-size: clampVw(18, 25, 25, 1200);
+        margin: 3rem 0;
+      }
+    }
+
+    &__thumbnail {
+      margin-bottom: 2rem;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+
+    &__inner {
+      line-height: 1.8;
+      font-size: clampVw(14, 18, 18, 1200);
+
+      p {
+        margin-bottom: 1.5em;
+      }
+    }
+  }
+}
+
+.articlePage-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+
+  a {
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    color: #000; // 黒リンク
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    .circle {
+      width: 1em;
+      height: 1em;
+      border: 1px solid #000; // 黒枠
+      border-radius: 50%;
+      display: inline-block;
+    }
+  }
+}

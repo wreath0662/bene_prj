@@ -1,0 +1,24 @@
+@use 'sass:math';
+@use '../../basic/setting' as *;
+@use '../../basic/variables' as *;
+
+.error_section {
+  .error_inner {
+    width: 90%;
+    margin: 0 auto;
+    padding: 200px 0;
+  }
+  .error_massage {
+    font-size: 80px;
+    @include mq(tb) {
+      font-size: 40px;
+    }
+    @include mq(sp) {
+      font-size: 28px;
+    }
+  }
+  .return-btn p {
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+  }
+}
