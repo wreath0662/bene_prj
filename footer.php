@@ -1,13 +1,11 @@
 <footer class="l-footer">
     <div class="l-footer_inner">
         <div class="l-footer_container">
-
             <div class="footer_nav">
-
                 <div class="footer_block">
-                    <picture>
+                    <figure>
                         <img src="<?php echo get_template_directory_uri(); ?>/images/common/footer_service.svg" alt="Service">
-                    </picture>
+                    </figure>
                     <ul>
                         <a href="">
                             <li>- やきにく玉乃屋</li>
@@ -22,9 +20,9 @@
                 </div>
 
                 <div class="footer_block">
-                    <picture>
+                    <figure>
                         <img src="<?php echo get_template_directory_uri(); ?>/images/common/footer_recruit.svg" alt="Recruit">
-                    </picture>
+                    </figure>
                     <ul>
                         <a href="">
                             <li>- Indeed</li>
@@ -40,20 +38,20 @@
 
                 <div class="footer_block footer_block_third">
                     <a href="">
-                        <picture class="company">
+                        <figure class="company">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/common/footer_company.svg" alt="Company">
-                        </picture>
+                        </figure>
                     </a>
                     <a href="">
-                        <picture>
+                        <figure>
                             <img src="<?php echo get_template_directory_uri(); ?>/images/common/footer_contact.svg" alt="Contact">
-                        </picture>
+                        </figure>
                     </a>
-                    <a href="https://www.instagram.com/bar_c_one_recruit?igsh=MWdlaDl3bzAxMnEwaA%3D%3D" target="_blank"
+                    <a href="https://www.instagram.com/bene_corp_recruit/" target="_blank"
                         rel="noopener noreferrer">
-                        <picture>
+                        <figure>
                             <img src="<?php echo get_template_directory_uri(); ?>/images/common/instagram.svg" alt="Contact">
-                        </picture>
+                        </figure>
                     </a>
                 </div>
             </div>
@@ -78,12 +76,7 @@
             <p class="footer_copy">©2025 Bene Corporation</p>
         </div>
 </footer>
-
-
 <?php wp_footer(); ?>
-
-
-
 </body>
 
 </html>

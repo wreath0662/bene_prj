@@ -19,7 +19,7 @@ if (!defined('ABSPATH')) exit;
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700+JP:wght@400;500;600;700;&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
   <?php wp_head(); ?>
 </head>
 
@@ -58,28 +58,27 @@ if (!defined('ABSPATH')) exit;
 
           <ul class="l-global-nav_list">
             <li class="l-global-nav_list_group"><a href="#">
-                <picture>
+                <figure>
                   <img src="<?php echo get_template_directory_uri(); ?>/images/home/menu_top.svg" alt="Top">
-                </picture>
+                </figure>
               </a></li>
             <li class="l-global-nav_list_group">
               <a href="#">
-                <picture>
+                <figure>
                   <img src="<?php echo get_template_directory_uri(); ?>/images/home/menu_service.svg" alt="Top">
-                </picture>
+                </figure>
               </a>
-
               <ul class="detail_menu">
-                <li><a href="#">- やきにく玉乃屋</a></li>
+                <li><a href="<?php echo esc_url(home_url('/service-tamanoya')); ?>">- やきにく玉乃屋</a></li>
                 <li><a href="#">- GARAGE T-HORSE</a></li>
                 <li><a href="#">- BAR C-ONE</a></li>
               </ul>
             </li>
             <li class="l-global-nav_list_group">
               <a href="#">
-                <picture>
+                <figure>
                   <img src="<?php echo get_template_directory_uri(); ?>/images/home/menu_recruit.svg" alt="Top">
-                </picture>
+                </figure>
               </a>
               <ul class="detail_menu">
                 <li><a href="#">- Indeed</a></li>
@@ -88,18 +87,16 @@ if (!defined('ABSPATH')) exit;
               </ul>
             </li>
             <li class="l-global-nav_list_group">
-              <picture>
+              <figure>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/home/menu_company.svg" alt="Top">
-              </picture>
+              </figure>
             </li>
             <li class="l-global-nav_list_group">
-              <picture>
+              <figure>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/home/menu_contact.svg" alt="Top">
-              </picture>
+              </figure>
             </li>
           </ul>
       </nav>
-
-
     </div>
   </header>

@@ -8,32 +8,31 @@ Template Name: フロントページ
 
 <!-- メインビジュアル -->
 <main class="h-mv">
-	<picture class="mv_logo">
-		<img src="<?php echo get_template_directory_uri(); ?>/images/home/group_logo.svg" alt="Bene Group">
-	</picture>
-
+	<figure class="mv_logo">
+		<img src="<?= esc_url(get_theme_file_uri('/images/home/group_logo.svg')); ?>" alt="Bene Group">
+	</figure>
 	<div class="mv_inner pc_only">
 
-		<picture class=" mv_image">
+		<figure class="mv_image">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/home/t-horse.png" alt="T-HORSE">
-		</picture>
+		</figure>
 
-		<picture class="mv_image">
+		<figure class="mv_image">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/home/kerandon.png" alt="ケランドン">
-		</picture>
+		</figure>
 
-		<picture class="mv_image">
+		<figure class="mv_image">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/home/tamanoya.png" alt="玉乃屋">
-		</picture>
+		</figure>
 
-		<picture class="mv_image">
+		<figure class="mv_image">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/home/c-one.png" alt="C-ONE">
-		</picture>
+		</figure>
 
-		<picture class="mv_image">
+		<figure class="mv_image">
 
 			<img src="<?php echo get_template_directory_uri(); ?>/images/home/ceo.png" alt="代表">
-		</picture>
+		</figure>
 	</div>
 
 	<!-- スマホのときのスライダー -->
@@ -54,14 +53,15 @@ Template Name: フロントページ
 			<div class="swiper-slide">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/home/ceo.png" alt="代表">
 			</div>
+
 		</div>
 	</div>
 
 	<div class="mv_text">
 		<p class="mv_text_main">人と街に<span class="comma">、</span>誠実と感動を</p>
-		<picture class="mv_text_sub">
+		<figure class="mv_text_sub">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/home/mv_subtext.svg" alt="Bringing sincerity and emotion to people and cities">
-		</picture>
+		</figure>
 	</div>
 </main>
 
@@ -73,27 +73,27 @@ Template Name: フロントページ
 	<div class="h-vision_inner">
 		<div class="h-vision_images">
 			<div class="h-vision_imagegroup">
-				<picture>
+				<figure>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/home/vision1.jpg" alt="カクテル">
-				</picture>
-				<picture>
+				</figure>
+				<figure>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/home/vision2.jpg" alt="車整備">
-				</picture>
+				</figure>
 			</div>
 			<div class="h-vision_imagegroup">
-				<picture>
+				<figure>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/home/vision3.jpg" alt="パン">
-				</picture>
-				<picture>
+				</figure>
+				<figure>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/home/vision4.jpg" alt="肉">
-				</picture>
+				</figure>
 			</div>
 		</div>
 
 		<div class="h-vision_box">
-			<picture class="h-vision_title">
+			<figure class="h-vision_title">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/home/vision_title.svg" alt="Our Vision">
-			</picture>
+			</figure>
 			<p class="h-vision_text">
 				地域密着から始まったBeneの挑戦は、やがて多くの人の記憶に残る信頼のブランドとなること。また、新しい価値を創り続ける企業となること。お客様の「ありがとう」を原動力に、信頼・誠実・挑戦を大切に、地域と共に歩んでまいります。
 			</p>
@@ -108,49 +108,49 @@ Template Name: フロントページ
 
 <!-- service -->
 <section class="h-service">
-	<picture class="h-service_title">
+	<figure class="h-service_title">
 		<img src="<?php echo get_template_directory_uri(); ?>/images/home/service_title.svg" alt="Service">
-	</picture>
+	</figure>
 
 	<div class="h-service_slider-wrapper">
 		<!-- Prevボタン -->
 		<div class="swiper-button-prev prev_text">
-			<picture class="sp_none">
+			<figure class="sp_none">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/home/service_prev.svg" alt="前へ">
-			</picture>
+			</figure>
 		</div>
 
 		<!-- スライダー本体 -->
 		<div class="h-service_slider swiper">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
-					<picture>
+					<figure>
 						<img src="<?php echo get_template_directory_uri(); ?>/images/home/service1.jpg" alt="サービス1">
-					</picture>
+					</figure>
 				</div>
 				<div class="swiper-slide">
-					<picture>
+					<figure>
 						<img src="<?php echo get_template_directory_uri(); ?>/images/home/service2.jpg" alt="サービス2">
-					</picture>
+					</figure>
 				</div>
 				<div class="swiper-slide">
-					<picture>
+					<figure>
 						<img src="<?php echo get_template_directory_uri(); ?>/images/home/service3.jpg" alt="サービス3">
-					</picture>
+					</figure>
 				</div>
 				<div class="swiper-slide">
-					<picture>
+					<figure>
 						<img src="<?php echo get_template_directory_uri(); ?>/images/home/service4.jpg" alt="サービス4">
-					</picture>
+					</figure>
 				</div>
+
 			</div>
 		</div>
-
 		<!-- Nextボタン -->
 		<div class="swiper-button-next next_text">
-			<picture class="sp_none">
+			<figure class="sp_none">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/home/service_next.svg" alt="次へ">
-			</picture>
+			</figure>
 		</div>
 
 		<div class="h-service_customArrows">
@@ -169,9 +169,9 @@ Template Name: フロントページ
 
 <!-- Greeting -->
 <section class="greeting">
-	<picture class="greeting_title">
+	<figure class="greeting_title">
 		<img src="<?php echo get_template_directory_uri(); ?>/images/home/greeting.svg" alt="Greeting">
-	</picture>
+	</figure>
 	<div class="greeting_inner">
 		<div class="greeting_box">
 
@@ -179,7 +179,6 @@ Template Name: フロントページ
 				地域密着から始まったBeneの挑戦は、
 				新しい価値を創り続ける企業となる
 			</p>
-
 			<div class="greeting_text">
 				<p>地域密着から始まったBeneの挑戦は、
 					人と人とのつながりを大切にしながら、
@@ -206,9 +205,9 @@ Template Name: フロントページ
 <section class="recruit">
 	<div class="recruit_inner">
 
-		<picture class="recruit_title">
+		<figure class="recruit_title">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/home/recruit_title.svg" alt="Recruit">
-		</picture>
+		</figure>
 
 		<div class="recruit_banner">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/home/recruit_banner.jpg" alt="Let's grow together at Bene Corporation!">
@@ -217,9 +216,9 @@ Template Name: フロントページ
 		<div class="recruit_links">
 			<!-- Indeed -->
 			<div class="recruit_links_group">
-				<picture class="recruit_links_image">
+				<figure class="recruit_links_image">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/home/indeed_logo.png" alt="Indeed">
-				</picture>
+				</figure>
 				<a class="recruit_btn" href="#">
 					<span>玉乃屋の求人情報を見る</span>
 					<img class="recruit_btn_arrow" src="<?php echo get_template_directory_uri(); ?>/images/home/arrow.svg" alt="矢印">
@@ -233,9 +232,9 @@ Template Name: フロントページ
 
 			<!-- 求人ボックス -->
 			<div class="recruit_links_group">
-				<picture class="recruit_links_image">
+				<figure class="recruit_links_image">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/home/kyujinbox_logo.png" alt="求人ボックス">
-				</picture>
+				</figure>
 				<a class="recruit_btn" href="#">
 					<span>玉乃屋の求人情報を見る</span>
 					<img class="recruit_btn_arrow" src="<?php echo get_template_directory_uri(); ?>/images/home/arrow.svg" alt="矢印">
@@ -249,9 +248,9 @@ Template Name: フロントページ
 
 			<!-- マイナビバイト -->
 			<div class="recruit_links_group">
-				<picture class="recruit_links_image">
+				<figure class="recruit_links_image">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/home/mynavi_logo.png" alt="マイナビバイト">
-				</picture>
+				</figure>
 				<a class="recruit_btn" href="#">
 					<span>玉乃屋の求人情報を見る</span>
 					<img class="recruit_btn_arrow" src="<?php echo get_template_directory_uri(); ?>/images/home/arrow.svg" alt="矢印">
@@ -272,9 +271,9 @@ Template Name: フロントページ
 	<div class="news_inner">
 
 		<div class="news_head">
-			<picture class="news_title">
+			<figure class="news_title">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/home/news_title.svg" alt="News">
-			</picture>
+			</figure>
 
 			<a class="news_link" href="<?php echo esc_url(get_post_type_archive_link('news')); ?>">
 				<span>お知らせ一覧へ</span>
@@ -313,17 +312,6 @@ Template Name: フロントページ
 			?>
 
 		</ul>
-
-
-
 	</div>
 </section>
-
-
-
-
-
-
-
-
 <?php get_footer(); ?>

@@ -23,18 +23,15 @@ get_header();
             </div>
             <h1><?php the_title(); ?></h1>
           </div>
-
           <?php if (has_post_thumbnail()) : ?>
             <div class="news-content__thumbnail">
               <?php the_post_thumbnail('large'); ?>
             </div>
           <?php endif; ?>
-
           <div class="news-content__inner">
             <?php the_content(); ?>
           </div>
         </article>
-
         <!-- <div class="articlePage-btn">
           <div class="prev-btn">
             <?php previous_post_link('%link', '<span class="circle"></span> 前の記事'); ?>
