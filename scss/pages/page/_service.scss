@@ -2,7 +2,7 @@
 @use "../../basic/setting" as *;
 @use "../../basic/variables" as *;
 
-.tamanoya {
+.service {
     .mv {
         padding: 250px 0 110px 0;
         position: relative;
@@ -350,13 +350,13 @@
     .sns {
         padding-top: 200px;
         padding-bottom: 140px;
-        @include mq(tb) {
+        @include mq(md) {
             padding-top: 60px;
             padding-bottom: 60px;
         }
 
         &_title {
-            font-size: 32px;
+            font-size: clampVw(18, 32, 32, 800);
             font-weight: bold;
             text-align: center;
         }
@@ -369,6 +369,9 @@
             display: flex;
             justify-content: center;
             gap: 5%;
+            @include mq(sp) {
+                margin-top: 35px;
+            }
         }
 
         &_item {

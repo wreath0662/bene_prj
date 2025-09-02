@@ -70,8 +70,10 @@ if (!defined('ABSPATH')) exit;
               </a>
               <ul class="detail_menu">
                 <li><a href="<?php echo esc_url(home_url('/service-tamanoya')); ?>">- やきにく玉乃屋</a></li>
-                <li><a href="#">- GARAGE T-HORSE</a></li>
-                <li><a href="#">- BAR C-ONE</a></li>
+                <li><a href="<?php echo esc_url(home_url('/service-t-horse')); ?>">- GARAGE T-HORSE</a></li>
+                <li><a href="<?php echo esc_url(home_url('/service-c-one')); ?>">- BAR C-ONE</a></li>
+                <li><a href="<?php echo esc_url(home_url('/service-kerandon')); ?>">- ケランドン</a></li>
+                <li><a href="<?php echo esc_url(home_url('/service-c-one')); ?>">- ニコニコレンタカー</a></li>
               </ul>
             </li>
             <li class="l-global-nav_list_group">

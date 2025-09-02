@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: 玉乃屋ページ
+Template Name: T-HORSEページ
 */
 if (!defined('ABSPATH')) exit;
 get_header(); ?>
@@ -11,7 +11,7 @@ get_header(); ?>
     <section class="mv">
         <div class="mv_inner">
             <figure class="mv_logo">
-                <img src="<?= esc_url(get_theme_file_uri('/images/service-tamanoya/service_logo.svg')); ?>" alt="玉乃屋ロゴ">
+                <img src="<?= esc_url(get_theme_file_uri('/images/service/tamanoya_logo.svg')); ?>" alt="玉乃屋ロゴ">
             </figure>
             <div class="mv_copy">
                 <p>個室で味わうのは</p>
@@ -21,16 +21,16 @@ get_header(); ?>
         </div>
 
         <figure class="beneGroup">
-            <img src="<?= esc_url(get_theme_file_uri('/images/service-tamanoya/benegroup_text.svg')); ?>" alt="Bene group">
+            <img src="<?= esc_url(get_theme_file_uri('/images/service/benegroup_text.svg')); ?>" alt="Bene group">
         </figure>
 
 
         <div class="mv_image">
             <figure class="sp_none">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/service_mv1.jpg" alt="玉乃屋メインビジュアル1">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_mv1.jpg" alt="玉乃屋メインビジュアル1">
             </figure>
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/service_mv2.jpg" alt="玉乃屋メインビジュアル2">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_mv2.jpg" alt="玉乃屋メインビジュアル2">
             </figure>
         </div>
     </section>
@@ -61,7 +61,7 @@ get_header(); ?>
             </p>
         </div>
         <figure class="concept_image">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/service.jpg" alt="玉乃屋の内観">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_service.jpg" alt="玉乃屋の内観">
         </figure>
     </section>
 
@@ -72,21 +72,21 @@ get_header(); ?>
         <div class="staff_wrapper">
             <div class="staff_item">
                 <figure class="staff_main_image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/staff.jpg" alt="玉乃屋スタッフ写真">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_staff.jpg" alt="玉乃屋スタッフ写真">
                 </figure>
                 <div class="staff_title">
                     <div class="loop_item">
                         <figure class="loop_inner_image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/staff_title.svg" alt="Staff Interview">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/service/staff_title.svg" alt="Staff Interview">
                         </figure>
                         <figure class="loop_inner_image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/staff_title.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/service/staff_title.svg" alt="">
                         </figure>
                         <figure class="loop_inner_image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/staff_title.svg" alt="Staff Interview">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/service/staff_title.svg" alt="Staff Interview">
                         </figure>
                         <figure class="loop_inner_image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/staff_title.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/service/staff_title.svg" alt="">
                         </figure>
                     </div>
                 </div>
@@ -104,7 +104,7 @@ get_header(); ?>
                         落ち着いた空間でゆったりとお食事を楽しんでいただけるよう、笑顔でのご対応や心配りを徹底しています。お料理のご説明やおすすめのご提案も行い、お客様に「また来たい」と思っていただける接客を心がけています。</p>
                 </div>
                 <figure class="staff_container_image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/staff1.jpg" alt="スタッフ写真2">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_staff1.jpg" alt="スタッフ写真2">
                 </figure>
 
             </div>
@@ -115,7 +115,7 @@ get_header(); ?>
                         わからないことがあってもすぐに相談できる雰囲気で、新人の方も安心して働ける環境です。仕事中はしっかりと連携しつつ、休憩中や終業後は和やかに会話がはずむアットホームなお店です。</p>
                 </div>
                 <figure class="staff_container_image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/staff2.jpg" alt="スタッフ写真2">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_staff2.jpg" alt="スタッフ写真2">
                 </figure>
 
             </div>
@@ -126,7 +126,7 @@ get_header(); ?>
                         これから一緒に働く仲間にも、楽しみながら成長できる環境を用意しています。未経験でも安心して挑戦できるようにサポートしますので、ぜひ一緒にお店を盛り上げていきましょう。</p>
                 </div>
                 <figure class="staff_container_image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/staff3.jpg" alt="スタッフ写真2">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_staff3.jpg" alt="スタッフ写真2">
                 </figure>
 
             </div>
@@ -134,13 +134,13 @@ get_header(); ?>
         </div>
         <div class="threePhoto">
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/staff4.jpg" alt="スタッフ写真2">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_staff4.jpg" alt="スタッフ写真2">
             </figure>
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/staff5.jpg" alt="スタッフ写真2">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_staff5.jpg" alt="スタッフ写真2">
             </figure>
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/staff6.jpg" alt="スタッフ写真2">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_staff6.jpg" alt="スタッフ写真2">
             </figure>
         </div>
     </section>
@@ -152,21 +152,21 @@ get_header(); ?>
         <div class="sns_list">
             <div class="sns_item">
                 <figure>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/contents_line.png" alt="LINE公式">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_line.png" alt="LINE公式">
                 </figure>
                 <p class="sns_item_name">公式LINE</p>
                 <p class="sns_item_account">ID:abc-def</p>
             </div>
             <div class="sns_item">
                 <figure>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/contents_insta.png" alt="Instagram公式">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_insta.png" alt="Instagram公式">
                     <p class="sns_item_name">公式Instagram</p>
                     <p class="sns_item_account">@yakiniku_tamanoya</p>
                 </figure>
             </div>
             <div class="sns_item">
                 <figure>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/bene_insta.png" alt="求人情報">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service/bene_insta.png" alt="求人情報">
                 </figure>
                 <p class="sns_item_name">採用情報</p>
                 <p class="sns_item_account">@bene_corp_recruit</p>
@@ -226,16 +226,16 @@ get_header(); ?>
     <!-- イメージ写真 -->
     <div class="imagePhoto">
         <figure>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/service_image1.jpg" alt="料理の写真">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_image1.jpg" alt="料理の写真">
         </figure>
         <figure>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/service_image2.jpg" alt="料理の写真">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_image2.jpg" alt="料理の写真">
         </figure>
         <figure>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/service_image3.jpg" alt="料理の写真">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_image3.jpg" alt="料理の写真">
         </figure>
         <figure>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/service_image4.jpg" alt="料理の写真">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_image4.jpg" alt="料理の写真">
         </figure>
     </div>
     <figure>
@@ -253,8 +253,8 @@ get_header(); ?>
                         </tr>
                         <tr>
                             <th>アクセス</th>
-                            <td>地下鉄堺筋線「日本橋駅」より徒歩5分、「長堀橋駅」より徒歩8分<br>
-                                地下鉄・阪神・近鉄「なんば駅」より徒歩7分</td>
+                            <td>地下鉄堺筋線「日本橋駅」5分、「長堀橋駅」8分<br>
+                                地下鉄・阪神・近鉄「なんば駅」より7分</td>
                         </tr>
                         <tr>
                             <th>営業時間</th>

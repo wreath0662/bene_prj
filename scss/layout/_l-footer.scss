@@ -61,7 +61,6 @@
     }
 
     .footer_info {
-        width: 49%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -82,15 +81,8 @@
         }
 
         .footer_address {
-            display: flex;
-            gap: 40px;
-
-            @include mq(sp) {
-                flex-direction: column;
-                gap: 20px;
-            }
-
             p {
+                padding-left: 10px;
                 line-height: 1.6;
                 font-size: clampVw(14, 18, 18, 1200);
             }

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: 玉乃屋ページ
+Template Name: ケランドンページ
 */
 if (!defined('ABSPATH')) exit;
 get_header(); ?>

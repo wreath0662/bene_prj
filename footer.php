@@ -16,6 +16,12 @@
                         <a href="">
                             <li>- BAR C-ONE</li>
                         </a>
+                        <a href="">
+                            <li>- ケランドン</li>
+                        </a>
+                        <a href="">
+                            <li>- ニコニコレンタカー</li>
+                        </a>
                     </ul>
                 </div>
 
@@ -60,12 +66,9 @@
                 <img class="footer_logo" src="<?php echo get_template_directory_uri(); ?>/images/common/footer_logo.svg" alt="Bene Corporation ロゴ">
 
                 <div class="footer_address">
-                    <div>
-                        <p>本社<br>〒556-0062<br>大阪府⼤阪市浪速区⿃⽻1-5-4-13</p>
-                    </div>
-                    <div>
-                        <p>堂⽥営業所<br>〒556-0005<br>⼤阪市浪速区⽇本橋5-12-9 共栄ビル302号室</p>
-                    </div>
+                    <p>
+                        〒556-0062<br>大阪府摂津市鳥飼上5-4-13
+                    </p>
                 </div>
             </div>
 
