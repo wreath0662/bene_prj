@@ -58,6 +58,11 @@
             font-size: clampVw(14, 18, 18, 1200);
 
             h2 {
+                font-size: 26px;
+                padding: 15px 0;
+                border-top: 1px solid #000;
+                border-bottom: 1px solid #000;
+
                 & + h2,
                 & + h3,
                 & + h4,
@@ -65,7 +70,7 @@
                 & + ul,
                 & + ol,
                 & + .wp-block-image {
-                    margin-top: rem(80);
+                    margin-top: 40px;
                     @include mq(sp) {
                         margin-top: rem(32);
                     }
@@ -73,6 +78,17 @@
             }
 
             h3 {
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    bottom: -1rem;
+                    display: block;
+                    width: 2.4rem;
+                    height: 1px;
+                    background-color: #000000;
+                    content: "";
+                }
                 & + h2,
                 & + h3,
                 & + h4,
@@ -104,6 +120,7 @@
             }
 
             p {
+                font-weight: 400;
                 & + h2,
                 & + h3,
                 & + h4,
@@ -111,7 +128,7 @@
                 & + ul,
                 & + ol,
                 & + .wp-block-image {
-                    margin-top: rem(48);
+                    margin-top: 40px;
                     @include mq(sp) {
                         margin-top: rem(32);
                     }
@@ -127,7 +144,7 @@
                 & + ul,
                 & + ol,
                 & + .wp-block-image {
-                    margin-top: rem(48);
+                    margin-top: 15px;
 
                     @include mq(sp) {
                         margin-top: rem(32);
@@ -137,7 +154,9 @@
 
             & > ul {
                 li {
-                    list-style: disc;
+                    list-style: square;
+                    margin-left: 1.2em; // 左のはみ出しを調整（標準より少し内側）
+                    padding-left: 0;
                 }
             }
 
@@ -165,9 +184,6 @@
 }
 
 .articlePage-btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 3rem;
 
     a {
@@ -178,9 +194,9 @@
         gap: 0.5em;
         color: #000; // 黒リンク
 
-        &:hover {
-            text-decoration: underline;
-        }
+        // &:hover {
+        //     text-decoration: underline;
+        // }
 
         .circle {
             width: 1em;
@@ -188,6 +204,17 @@
             border: 1px solid #000; // 黒枠
             border-radius: 50%;
             display: inline-block;
+        }
+    }
+
+    .back-btn {
+        font-size: 18px;
+        margin-top: 120px;
+        display: flex;
+        justify-content: center;
+        span {
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
         }
     }
 }

@@ -11,26 +11,26 @@ get_header(); ?>
     <section class="mv">
         <div class="mv_inner">
             <figure class="mv_logo">
-                <img src="<?= esc_url(get_theme_file_uri('/images/service/tamanoya_logo.svg')); ?>" alt="玉乃屋ロゴ">
+                <img src="<?= esc_url(get_theme_file_uri('/images/service-t-horse/service_logo.svg')); ?>" alt="玉乃屋ロゴ">
             </figure>
             <div class="mv_copy">
-                <p>個室で味わうのは</p>
-                <p>極雌和牛× 厳選ワイン</p>
-                <p>ワンランク上の時間</p>
+                <p>理想の一台に出会えるのは</p>
+                <p>全国オークション×プロ代行</p>
+                <p>購入から納車までワンストップ</p>
             </div>
         </div>
 
         <figure class="beneGroup">
-            <img src="<?= esc_url(get_theme_file_uri('/images/service/benegroup_text.svg')); ?>" alt="Bene group">
+            <img src="<?= esc_url(get_theme_file_uri('/images/service-t-horse/benegroup_text.svg')); ?>" alt="Bene group">
         </figure>
 
 
         <div class="mv_image">
             <figure class="sp_none">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_mv1.jpg" alt="玉乃屋メインビジュアル1">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/service_mv1.jpg" alt="玉乃屋メインビジュアル1">
             </figure>
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_mv2.jpg" alt="玉乃屋メインビジュアル2">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/service_mv2.jpg" alt="玉乃屋メインビジュアル2">
             </figure>
         </div>
     </section>
@@ -38,30 +38,27 @@ get_header(); ?>
 
     <!-- コンセプト -->
     <section class="concept">
-        <h2 class="concept_title">全席個室完備<br>ミナミで寛ぎのひと時を</h2>
+        <h2 class="concept_title">全国オークション対応<br>安心して選ぶ理想の1台を</h2>
 
         <div class="concept_text">
             <p class="concept_text_container">
-                少人数OK ! <br>
-                全席個室で2名～10名様までご利用可能。
+                初めての方でも安心！ <br>
+                プロがご希望に合った車両を代行落札いたします。
             </p>
             <p class="concept_text_container">
-                卓上には無煙ロースターを搭載。<br>
-                煙が充満しないキレイな環境で<br>
-                焼肉できるのもポイントです。
+                店頭に並ばない希少車や、コストを抑えたお得な車まで幅広く対応。<br>
+                中間マージンを省いた透明性のある価格でご提供できるのもポイントです。
             </p>
             <p class="concept_text_container">
-                デートや少人数での宴会。<br>
-                様々なシーンにプライベートな空間として<br>
-                各席仕切り付きの個室
+                落札後は名義変更・車検・整備・納車までトータルでサポート。
             </p>
             <p class="concept_text_container">
-                プライベート空間で<br>
-                ゆったりお過ごしいただけます。
+                安心と納得のサービスで、<br>
+                長くお付き合いいただけます。
             </p>
         </div>
         <figure class="concept_image">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_service.jpg" alt="玉乃屋の内観">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/service.jpg" alt="玉乃屋の内観">
         </figure>
     </section>
 
@@ -72,107 +69,104 @@ get_header(); ?>
         <div class="staff_wrapper">
             <div class="staff_item">
                 <figure class="staff_main_image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_staff.jpg" alt="玉乃屋スタッフ写真">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/staff.jpg" alt="スタッフ写真">
                 </figure>
                 <div class="staff_title">
                     <div class="loop_item">
                         <figure class="loop_inner_image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/service/staff_title.svg" alt="Staff Interview">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/staff_title.svg" alt="Staff Interview">
                         </figure>
                         <figure class="loop_inner_image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/service/staff_title.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/staff_title.svg" alt="">
                         </figure>
                         <figure class="loop_inner_image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/service/staff_title.svg" alt="Staff Interview">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/staff_title.svg" alt="Staff Interview">
                         </figure>
                         <figure class="loop_inner_image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/service/staff_title.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/staff_title.svg" alt="">
                         </figure>
                     </div>
                 </div>
 
                 <div class="staff_copy">
-                    <p class="staff_main_copy">“いらっしゃいませ”の<br>
-                        声がそろう瞬間が好き！</p>
-                    <p class="staff_sub_copy">一体感のある職場で、笑顔と元気を届けています。</p>
+                    <p class="staff_main_copy">安心と信頼を届ける<br>
+                        オークション代行</p>
+                    <p class="staff_sub_copy">お客様に最適な一台を見つけることが、私たちの使命です。</p>
                 </div>
             </div>
             <div class="staff_container">
                 <div class="staff_text">
-                    <p class="staff_question">玉乃屋のお客様に対する接客方針はありますか？</p>
-                    <p class="staff_answer">私たちは「一組一組のお客様に寄り添うこと」を大切にしています。
-                        落ち着いた空間でゆったりとお食事を楽しんでいただけるよう、笑顔でのご対応や心配りを徹底しています。お料理のご説明やおすすめのご提案も行い、お客様に「また来たい」と思っていただける接客を心がけています。</p>
+                    <p class="staff_question">お客様に対する接客方針はありますか？</p>
+                    <p class="staff_answer">車は一台一台に個性があり、お客様が求める条件もそれぞれ異なります。だからこそ「ご予算・用途・好み」に合わせた最適なご提案を心がけています。オークションの専門知識を活かし、安心して任せていただけるよう誠実に対応しています。</p>
                 </div>
                 <figure class="staff_container_image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_staff1.jpg" alt="スタッフ写真2">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/staff1.jpg" alt="スタッフ写真2">
                 </figure>
 
             </div>
             <div class="staff_container">
                 <div class="staff_text">
                     <p class="staff_question">スタッフ同士やお店の雰囲気はどうですか？</p>
-                    <p class="staff_answer">スタッフ同士の仲が良く、チームワークを大切にしています。
-                        わからないことがあってもすぐに相談できる雰囲気で、新人の方も安心して働ける環境です。仕事中はしっかりと連携しつつ、休憩中や終業後は和やかに会話がはずむアットホームなお店です。</p>
+                    <p class="staff_answer">小規模だからこそ風通しがよく、スタッフ全員が意見を出し合える雰囲気です。車が好きなメンバーが集まっているので、オークションの情報交換や新しい車種の話題で盛り上がることも多いです。堅苦しさはなく、前向きに挑戦できる環境です。</p>
                 </div>
                 <figure class="staff_container_image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_staff2.jpg" alt="スタッフ写真2">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/staff2.jpg" alt="スタッフ写真2">
                 </figure>
 
             </div>
             <div class="staff_container">
                 <div class="staff_text">
                     <p class="staff_question">お客さまやこれから入社する方へメッセージを</p>
-                    <p class="staff_answer">玉乃屋は、料理や接客を通して「特別な時間」をお届けする場所です。
-                        これから一緒に働く仲間にも、楽しみながら成長できる環境を用意しています。未経験でも安心して挑戦できるようにサポートしますので、ぜひ一緒にお店を盛り上げていきましょう。</p>
+                    <p class="staff_answer">T-HORSEは「安心して車を購入できるオークション代行サービス」を目指しています。初めてオークションに挑戦する方も、車が好きで仕事にしたい方も大歓迎です。信頼を第一に、お客様にとって一番のパートナーであり続けたいと思っています。</p>
                 </div>
                 <figure class="staff_container_image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_staff3.jpg" alt="スタッフ写真2">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/staff3.jpg" alt="スタッフ写真2">
                 </figure>
 
             </div>
 
         </div>
-        <div class="threePhoto">
+        <div class="threePhoto t-horsePhoto">
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_staff4.jpg" alt="スタッフ写真2">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/staff4.jpg" alt="スタッフ写真2">
             </figure>
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_staff5.jpg" alt="スタッフ写真2">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/staff5.jpg" alt="スタッフ写真2">
             </figure>
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_staff6.jpg" alt="スタッフ写真2">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/staff6.jpg" alt="スタッフ写真2">
             </figure>
         </div>
     </section>
 
 
     <!-- SNS -->
-    <section class="sns">
+    <!-- <section class="sns">
         <h2 class="sns_title">やきにく玉乃屋 公式コンテンツ</h2>
         <div class="sns_list">
             <div class="sns_item">
                 <figure>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_line.png" alt="LINE公式">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/contents_line.png" alt="LINE公式">
                 </figure>
                 <p class="sns_item_name">公式LINE</p>
                 <p class="sns_item_account">ID:abc-def</p>
             </div>
             <div class="sns_item">
                 <figure>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_insta.png" alt="Instagram公式">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/contents_insta.png" alt="Instagram公式">
                     <p class="sns_item_name">公式Instagram</p>
-                    <p class="sns_item_account">@yakiniku_tamanoya</p>
+                    <p class="sns_item_account">@yakiniku_t-horse</p>
                 </figure>
             </div>
             <div class="sns_item">
                 <figure>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/service/bene_insta.png" alt="求人情報">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/bene_insta.png" alt="求人情報">
                 </figure>
                 <p class="sns_item_name">採用情報</p>
                 <p class="sns_item_account">@bene_corp_recruit</p>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- News -->
     <section class="news">
@@ -194,7 +188,7 @@ get_header(); ?>
                 $query = new WP_Query(array(
                     'post_type'      => 'post',
                     'posts_per_page' => 3,
-                    'category_name' => "tamanoya",
+                    'category_name' => "t-horse",
                 ));
                 if ($query->have_posts()) :
                     while ($query->have_posts()) : $query->the_post();
@@ -226,16 +220,16 @@ get_header(); ?>
     <!-- イメージ写真 -->
     <div class="imagePhoto">
         <figure>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_image1.jpg" alt="料理の写真">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/service_image1.jpg" alt="料理の写真">
         </figure>
         <figure>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_image2.jpg" alt="料理の写真">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/service_image2.jpg" alt="料理の写真">
         </figure>
         <figure>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_image3.jpg" alt="料理の写真">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/service_image3.jpg" alt="料理の写真">
         </figure>
         <figure>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/service/tamanoya_image4.jpg" alt="料理の写真">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/service_image4.jpg" alt="料理の写真">
         </figure>
     </div>
     <figure>
@@ -249,18 +243,15 @@ get_header(); ?>
                     <table class="shopinfo_item">
                         <tr>
                             <th>住所</th>
-                            <td>大阪府大阪市中央区宗右衛門町5-28</td>
+                            <td>大阪府摂津市新在家1-22-46</td>
                         </tr>
                         <tr>
                             <th>アクセス</th>
-                            <td>地下鉄堺筋線「日本橋駅」5分、「長堀橋駅」8分<br>
-                                地下鉄・阪神・近鉄「なんば駅」より7分</td>
+                            <td>大阪モノレール本線「南摂津駅」より徒歩13分</td>
                         </tr>
                         <tr>
                             <th>営業時間</th>
-                            <td>［火～木・日・祝］17：00〜24：00（L.O.23：00）<br>
-                                ［金・土］17：00～27：00（L.O.26：00）<br>
-                                <div class="annotation">※月曜日が営業日の場合17：00〜24：00営業になります。</div>
+                            <td>10:30~19:00
                             </td>
 
                         </tr>
@@ -271,38 +262,16 @@ get_header(); ?>
 
                         <tr>
                             <th>電話番号</th>
-                            <td>06-6214-0298</td>
-                        </tr>
-                        <tr>
-                            <th>予算</th>
-                            <td>8,000円～9,999円</td>
-                        </tr>
-                        <tr>
-                            <th>支払い方法</th>
-                            <td>現金・カード可（VISA、Master、JCB、A MEX、Diners）</td>
-                        </tr>
-                        <tr>
-                            <th>サービス料</th>
-                            <td>VIPルームのみ2ｈ5,000円（4～10名様で利用可）</td>
-                        </tr>
-                        <tr>
-                            <th>席・設備</th>
-                            <td>全席喫煙可／全席個室／モニターあり／VIPルーム貸切可</td>
+                            <td>06-6379-3925</td>
                         </tr>
 
+
                     </table>
-                    <div class="shopinfo_note">
-                        <p>※予約時間から連絡なく15分以上ご来店が無かった場合、キャンセル扱いとさせていただきます。</p>
-                        <p>※ご予約の確認でお店からお電話させていただく場合が御座います。
-                            WEB予約でお席が取れない場合でも、空席がある場合が御座います。<br>
-                            その際はお店まで一度ご連絡をお願い致します。</p>
-                        <p>※WEB予約でお席が取れない場合でも、空席がある場合が御座います。その際はお店まで一度ご連絡をお願い致します。</p>
-                    </div>
+
                 </div>
             </div>
             <div class="shopinfo_map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640.6940657758119!2d135.50185731999372!3d34.670152401945444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e72be0116dd7%3A0xf8f983d6ef2202f2!2z44KE44GN44Gr44GP546J5LmD5bGL!5e0!3m2!1sja!2sjp!4v1756429423025!5m2!1sja!2sjp" width="600" height="540" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9269.382734845123!2d135.56000178982958!3d34.775193857660305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e24f3c78d0d5%3A0x72c43a027f73c6ab!2zZ2FyYWdlIFQtSE9SU0Ug5pGC5rSl5bqX!5e0!3m2!1sja!2sjp!4v1756865334871!5m2!1sja!2sjp" width="600" height="540" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
 

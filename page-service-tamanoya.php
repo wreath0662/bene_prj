@@ -15,7 +15,7 @@ get_header(); ?>
             </figure>
             <div class="mv_copy">
                 <p>個室で味わうのは</p>
-                <p>極雌和牛× 厳選ワイン</p>
+                <p>極雌和牛×厳選ワイン</p>
                 <p>ワンランク上の時間</p>
             </div>
         </div>
@@ -99,7 +99,7 @@ get_header(); ?>
             </div>
             <div class="staff_container">
                 <div class="staff_text">
-                    <p class="staff_question">玉乃屋のお客様に対する接客方針はありますか？</p>
+                    <p class="staff_question">お客様に対する接客方針はありますか？</p>
                     <p class="staff_answer">私たちは「一組一組のお客様に寄り添うこと」を大切にしています。
                         落ち着いた空間でゆったりとお食事を楽しんでいただけるよう、笑顔でのご対応や心配りを徹底しています。お料理のご説明やおすすめのご提案も行い、お客様に「また来たい」と思っていただける接客を心がけています。</p>
                 </div>
@@ -279,7 +279,7 @@ get_header(); ?>
                         </tr>
                         <tr>
                             <th>支払い方法</th>
-                            <td>現金・カード可（VISA、Master、JCB、A MEX、Diners）</td>
+                            <td>現金・カード（VISA、Master、JCB、A MEX、Diners）</td>
                         </tr>
                         <tr>
                             <th>サービス料</th>

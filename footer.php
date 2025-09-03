@@ -7,16 +7,16 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/images/common/footer_service.svg" alt="Service">
                     </figure>
                     <ul>
-                        <a href="">
+                        <a href="<?php echo esc_url(home_url('/service-tamanoya')); ?>">
                             <li>- やきにく玉乃屋</li>
                         </a>
-                        <a href="">
+                        <a href="<?php echo esc_url(home_url('/service-t-horse')); ?>">
                             <li>- GARAGE T-HORSE</li>
                         </a>
-                        <a href="">
+                        <a href="<?php echo esc_url(home_url('/service-c-one')); ?>">
                             <li>- BAR C-ONE</li>
                         </a>
-                        <a href="">
+                        <a href="<?php echo esc_url(home_url('/service-kerandon')); ?>">
                             <li>- ケランドン</li>
                         </a>
                         <a href="">
@@ -26,9 +26,11 @@
                 </div>
 
                 <div class="footer_block">
-                    <figure>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/common/footer_recruit.svg" alt="Recruit">
-                    </figure>
+                    <a href="">
+                        <figure>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/common/footer_recruit.svg" alt="Recruit">
+                        </figure>
+                    </a>
                     <ul>
                         <a href="">
                             <li>- Indeed</li>
@@ -43,12 +45,12 @@
                 </div>
 
                 <div class="footer_block footer_block_third">
-                    <a href="">
-                        <figure class="company">
+                    <a href="<?php echo esc_url(home_url('/company')); ?>">
+                        <figure class="footer_company">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/common/footer_company.svg" alt="Company">
                         </figure>
                     </a>
-                    <a href="">
+                    <a href="<?php echo esc_url(home_url('/contact')); ?>">
                         <figure>
                             <img src="<?php echo get_template_directory_uri(); ?>/images/common/footer_contact.svg" alt="Contact">
                         </figure>

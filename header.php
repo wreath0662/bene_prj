@@ -57,17 +57,17 @@ if (!defined('ABSPATH')) exit;
         <ul class="l-global-nav_list">
 
           <ul class="l-global-nav_list">
-            <li class="l-global-nav_list_group"><a href="#">
+            <li class="l-global-nav_list_group"><a href="<?php echo esc_url(home_url('/')); ?>">
                 <figure>
                   <img src="<?php echo get_template_directory_uri(); ?>/images/home/menu_top.svg" alt="Top">
                 </figure>
               </a></li>
             <li class="l-global-nav_list_group">
-              <a href="#">
-                <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/menu_service.svg" alt="Top">
-                </figure>
-              </a>
+
+              <figure>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home/menu_service.svg" alt="Top">
+              </figure>
+
               <ul class="detail_menu">
                 <li><a href="<?php echo esc_url(home_url('/service-tamanoya')); ?>">- やきにく玉乃屋</a></li>
                 <li><a href="<?php echo esc_url(home_url('/service-t-horse')); ?>">- GARAGE T-HORSE</a></li>
@@ -77,26 +77,30 @@ if (!defined('ABSPATH')) exit;
               </ul>
             </li>
             <li class="l-global-nav_list_group">
-              <a href="#">
+              <a href="<?php echo home_url('/'); ?>#recruit">
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/menu_recruit.svg" alt="Top">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/menu_recruit.svg" alt="Recruit">
                 </figure>
               </a>
-              <ul class="detail_menu">
+              <!-- <ul class="detail_menu">
                 <li><a href="#">- Indeed</a></li>
                 <li><a href="#">- 求人ボックス</a></li>
                 <li><a href="#">- マイナビバイト</a></li>
-              </ul>
+              </ul> -->
             </li>
             <li class="l-global-nav_list_group">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/home/menu_company.svg" alt="Top">
-              </figure>
+              <a href="<?php echo esc_url(home_url('/company')); ?>">
+                <figure>
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/menu_company.svg" alt="Company">
+                </figure>
+              </a>
             </li>
             <li class="l-global-nav_list_group">
-              <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/home/menu_contact.svg" alt="Top">
-              </figure>
+              <a href="<?php echo esc_url(home_url('/contact')); ?>">
+                <figure>
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/menu_contact.svg" alt="Contact">
+                </figure>
+              </a>
             </li>
           </ul>
       </nav>

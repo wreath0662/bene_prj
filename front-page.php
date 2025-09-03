@@ -97,7 +97,7 @@ Template Name: フロントページ
 			<p class="h-vision_text">
 				地域密着から始まったBeneの挑戦は、やがて多くの人の記憶に残る信頼のブランドとなること。また、新しい価値を創り続ける企業となること。お客様の「ありがとう」を原動力に、信頼・誠実・挑戦を大切に、地域と共に歩んでまいります。
 			</p>
-			<a class="h-vision_btn" href="#">
+			<a class="h-vision_btn" href="<?php echo esc_url(home_url('/company')); ?>">
 				<span class="h-vision_btn__text">会社紹介へ</span>
 				<img class="h-vision_btn__arrow" src="<?php echo get_template_directory_uri(); ?>/images/home/arrow.svg" alt="矢印">
 			</a>
@@ -202,7 +202,7 @@ Template Name: フロントページ
 </section>
 
 <!-- Recruit -->
-<section class="recruit">
+<section id="recruit" class="recruit">
 	<div class="recruit_inner">
 
 		<figure class="recruit_title">
@@ -219,7 +219,8 @@ Template Name: フロントページ
 				<figure class="recruit_links_image">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/home/indeed_logo.png" alt="Indeed">
 				</figure>
-				<a class="recruit_btn" href="#">
+				<a class="recruit_btn" href="https://jp.indeed.com/job/%E5%BF%83%E6%96%8E%E6%A9%8B%E3%81%AE%E7%84%BC%E8%82%89%E5%BA%97%E3%81%A7%E3%83%9B%E3%83%BC%E3%83%AB%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3-df06f09206e608ee" target="_blank"
+					rel="noopener noreferrer">
 					<span>玉乃屋の求人情報を見る</span>
 					<img class="recruit_btn_arrow" src="<?php echo get_template_directory_uri(); ?>/images/home/arrow.svg" alt="矢印">
 				</a>

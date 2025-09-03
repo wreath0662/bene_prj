@@ -343,6 +343,11 @@
                 gap: 2px;
             }
         }
+
+        // T-HORSE
+        .t-horsePhoto {
+            margin-bottom: 120px;
+        }
     }
 
     // SNS
@@ -383,7 +388,7 @@
             }
 
             &_account {
-                font-size: clampVw(12, 15, 32, 800);
+                font-size: clampVw(12, 15, 20, 800);
                 font-weight: bold;
                 text-align: center;
                 margin-top: 12px;

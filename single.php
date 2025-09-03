@@ -32,23 +32,23 @@ get_header();
             <?php the_content(); ?>
           </div>
         </article>
-        <!-- <div class="articlePage-btn">
-          <div class="prev-btn">
+        <div class="articlePage-btn">
+          <!-- <div class="prev-btn">
             <?php previous_post_link('%link', '<span class="circle"></span> 前の記事'); ?>
-          </div>
+          </div> -->
           <div class="back-btn">
             <a href="<?php echo esc_url(home_url('/news/')); ?>">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-back.svg" alt="戻る">
-              一覧に戻る
+              <span class="h-vision_btn__text">一覧に戻る</span>
+              <img class="h-vision_btn__arrow" src="<?php echo get_template_directory_uri(); ?>/images/home/arrow.svg" alt="矢印">
             </a>
           </div>
-          <div class="next-btn">
+          <!-- <div class="next-btn">
             <?php next_post_link('%link', '次の記事 <span class="circle"></span>'); ?>
           </div>
         </div> -->
-    <?php endwhile;
+      <?php endwhile;
     endif; ?>
-  </div>
+        </div>
 </main>
 
 <?php get_footer(); ?>
