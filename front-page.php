@@ -124,24 +124,32 @@ Template Name: フロントページ
 		<div class="h-service_slider swiper">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
-					<figure>
-						<img src="<?php echo get_template_directory_uri(); ?>/images/home/service1.jpg" alt="サービス1">
-					</figure>
+					<a href="<?php echo esc_url(home_url('/service-tamanoya')); ?>">
+						<figure>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/home/service1.jpg" alt="サービス1">
+						</figure>
+					</a>
 				</div>
 				<div class="swiper-slide">
-					<figure>
-						<img src="<?php echo get_template_directory_uri(); ?>/images/home/service2.jpg" alt="サービス2">
-					</figure>
+					<a href="<?php echo esc_url(home_url('/service-t-horse')); ?>">
+						<figure>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/home/service2.jpg" alt="サービス2">
+						</figure>
+					</a>
 				</div>
 				<div class="swiper-slide">
-					<figure>
-						<img src="<?php echo get_template_directory_uri(); ?>/images/home/service3.jpg" alt="サービス3">
-					</figure>
+					<a href="<?php echo esc_url(home_url('/service-c-one')); ?>">
+						<figure>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/home/service3.jpg" alt="サービス3">
+						</figure>
+					</a>
 				</div>
 				<div class="swiper-slide">
-					<figure>
-						<img src="<?php echo get_template_directory_uri(); ?>/images/home/service4.jpg" alt="サービス4">
-					</figure>
+					<a href="<?php echo esc_url(home_url('/service-kerandon')); ?>">
+						<figure>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/home/service4.jpg" alt="サービス4">
+						</figure>
+					</a>
 				</div>
 
 			</div>
@@ -276,7 +284,7 @@ Template Name: フロントページ
 				<img src="<?php echo get_template_directory_uri(); ?>/images/home/news_title.svg" alt="News">
 			</figure>
 
-			<a class="news_link" href="<?php echo esc_url(get_post_type_archive_link('news')); ?>">
+			<a class="news_link" href="<?php echo esc_url(home_url('/news')); ?>">
 				<span>お知らせ一覧へ</span>
 				<img class="news_link_arrow" src="<?php echo get_template_directory_uri(); ?>/images/home/arrow.svg" alt="矢印">
 			</a>

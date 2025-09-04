@@ -82,11 +82,12 @@ if (!defined('ABSPATH')) exit;
                   <img src="<?php echo get_template_directory_uri(); ?>/images/home/menu_recruit.svg" alt="Recruit">
                 </figure>
               </a>
-              <!-- <ul class="detail_menu">
-                <li><a href="#">- Indeed</a></li>
+              <ul class="detail_menu">
+                <li><a href="https://jp.indeed.com/cmp/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%EF%BD%82%EF%BD%85%EF%BD%8E%EF%BD%85-%EF%BC%A3%EF%BD%8F%EF%BD%92%EF%BD%90%EF%BD%8F%EF%BD%92%EF%BD%81%EF%BD%94%EF%BD%89%EF%BD%8F%EF%BD%8E?from=gnav-one-host&hl=ja&co=JP" target="_blank"
+                    rel="noopener noreferrer">- Indeed</a></li>
                 <li><a href="#">- 求人ボックス</a></li>
                 <li><a href="#">- マイナビバイト</a></li>
-              </ul> -->
+              </ul>
             </li>
             <li class="l-global-nav_list_group">
               <a href="<?php echo esc_url(home_url('/company')); ?>">

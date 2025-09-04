@@ -1,3 +1,192 @@
 @use "sass:math";
 @use "../../basic/setting" as *;
 @use "../../basic/variables" as *;
+
+.news_archive {
+    padding: 200px 0;
+    @include mq(md) {
+        padding: 100px 0;
+    }
+
+    &_inner {
+        width: 90%;
+        max-width: 1390px;
+        margin: 0 auto;
+    }
+
+    &_container {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 260px 1fr; // 左：サイド / 右：一覧
+        gap: 15%;
+        @include mq(md) {
+            grid-template-columns: 1fr;
+            align-items: start;
+            gap: 5%;
+            margin-top: 50px;
+        }
+    }
+
+    // サイドナビ
+    &_sideNav {
+        padding-top: 40px;
+        @include mq(md) {
+            padding-top: 0;
+        }
+
+        &_list {
+            list-style: none;
+            display: grid;
+            gap: 12px;
+            @include mq(md) {
+                grid-template-columns: repeat(2, 1fr); // 横2列
+                gap: 25px;
+            }
+
+            li {
+                padding: 10px 0;
+
+                @include mq(md) {
+                    padding: 0;
+                }
+                a {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 12px 8px;
+                    font-size: clampVw(13, 18, 18, 1000);
+                    font-weight: bold;
+                    border-bottom: 1px solid;
+                    @include mq(md) {
+                        padding: 12px 5px;
+                    }
+
+                    span {
+                        // → の矢印
+                        font-family: system-ui, -apple-system, "Helvetica Neue", Arial, "Noto Sans JP", sans-serif;
+                    }
+
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+
+    &_side {
+        position: sticky;
+        top: 24px;
+        align-self: start;
+    }
+
+    &_title {
+        margin: 0 0 24px;
+
+        figure {
+            display: block;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 220px; // 見出しSVGの最大幅
+        }
+    }
+
+    &_list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &_item {
+        border-bottom: 1px solid #d3d3d3;
+    }
+
+    &_link {
+        display: grid;
+        grid-template-columns: 220px 1fr; // 左：日付+カテゴリ / 右：タイトル
+        align-items: center;
+        gap: 24px;
+        padding: 40px 0;
+        @include mq(md) {
+            grid-template-columns: 1fr;
+            align-items: start;
+            gap: 15%;
+            padding: 20px 0;
+        }
+    }
+
+    &_meta {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &_date {
+        font-size: clampVw(14, 20, 20, 1000);
+        font-weight: 500;
+    }
+
+    &_cat {
+        flex-shrink: 0;
+        display: inline-block;
+        width: 110px;
+        text-align: center;
+        font-size: clampVw(13, 15, 15, 1000);
+        padding: 7px 0;
+        background: #f0f0f0;
+        white-space: nowrap;
+        @include mq(md) {
+            padding: 5px 0;
+            width: 95px;
+        }
+    }
+
+    &_text {
+        font-size: clampVw(14, 18, 18, 1000);
+        line-height: 1.6;
+    }
+
+    // ページネーション
+
+    .screen-reader-text {
+        display: none;
+    }
+
+    &_pagination {
+        margin-top: 120px;
+        display: flex;
+        justify-content: center;
+
+        .page-numbers {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 40px;
+            height: 40px;
+            font-size: 18px;
+            border: 1px solid;
+            margin-right: 20px;
+            text-decoration: none;
+            @include mq(sp) {
+                min-width: 30px;
+                height: 30px;
+                font-size: 15px;
+                margin-right: 10px;
+            }
+
+            &.current {
+                color: #fff;
+                background-color: #000;
+                border: 3px solid #000;
+            }
+        }
+
+        .prev,
+        .next {
+            display: none;
+        }
+    }
+}

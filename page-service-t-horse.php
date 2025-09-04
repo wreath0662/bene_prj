@@ -177,7 +177,7 @@ get_header(); ?>
                     <img src="<?php echo get_template_directory_uri(); ?>/images/home/news_title.svg" alt="News">
                 </figure>
 
-                <a class="news_link" href="<?php echo esc_url(get_post_type_archive_link('news')); ?>">
+                <a class="news_link" href="<?php echo esc_url(home_url('/category/t-horse')); ?>">
                     <span>お知らせ一覧へ</span>
                     <img class="news_link_arrow" src="<?php echo get_template_directory_uri(); ?>/images/home/arrow.svg" alt="矢印">
                 </a>

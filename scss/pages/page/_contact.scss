@@ -1,0 +1,96 @@
+@use "sass:math";
+@use "../../basic/setting" as *;
+@use "../../basic/variables" as *;
+
+.contact {
+    .contact_form {
+        .subPage-frame {
+            padding: 60px 0;
+
+            .wrapper-min {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .contact-ttlBox {
+                margin-bottom: 40px;
+                text-align: center;
+
+                .eng {
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #054a95; // .blue に相当
+                    margin-bottom: 8px;
+                }
+
+                h2 {
+                    font-size: 32px;
+                    font-weight: bold;
+                    color: #054a95;
+
+                    &.blue {
+                        color: #054a95;
+                    }
+                }
+
+                .info {
+                    margin-bottom: 0;
+
+                    p {
+                        padding-left: 0.5em;
+                        text-indent: -0.5em;
+                        color: #000;
+                        font-size: 14px;
+                        line-height: 1.6;
+                    }
+                }
+            }
+
+            .form-inner {
+                .desc {
+                    font-size: 16px;
+                    line-height: 1.8;
+                    color: #333;
+
+                    &.mb1 {
+                        margin-bottom: 1em;
+                    }
+
+                    &.mb2 {
+                        margin-bottom: 2em;
+                    }
+
+                    &.red {
+                        color: #d70000;
+                    }
+                }
+
+                form {
+                    // MW WP Form などを使っている場合、個別スタイルが必要
+                    input,
+                    textarea,
+                    select {
+                        width: 100%;
+                        padding: 10px;
+                        border: 1px solid #ccc;
+                        font-size: 14px;
+                        border-radius: 4px;
+                    }
+
+                    input[type="submit"] {
+                        background-color: #054a95;
+                        color: #fff;
+                        border: none;
+                        padding: 12px 24px;
+                        border-radius: 4px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: #073e86;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
