@@ -151,23 +151,32 @@ get_header(); ?>
         <h2 class="sns_title">やきにく玉乃屋 公式コンテンツ</h2>
         <div class="sns_list">
             <div class="sns_item">
-                <figure>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/contents_line.png" alt="LINE公式">
-                </figure>
-                <p class="sns_item_name">公式LINE</p>
-                <p class="sns_item_account">ID:abc-def</p>
+                <a href="https://line.me/R/ti/p/@109schcl" target="_blank"
+                    rel="noopener noreferrer">
+                    <figure>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/contents_line.png" alt="LINE公式">
+                    </figure>
+                    <p class="sns_item_name">公式LINE</p>
+                    <p class="sns_item_account">ID:abc-def</p>
+                </a>
             </div>
             <div class="sns_item">
-                <figure>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/contents_insta.png" alt="Instagram公式">
-                    <p class="sns_item_name">公式Instagram</p>
-                    <p class="sns_item_account">@yakiniku_tamanoya</p>
-                </figure>
+                <a href="https://www.instagram.com/yakiniku_tamanoya/" target="_blank"
+                    rel="noopener noreferrer">
+                    <figure>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/contents_insta.png" alt="Instagram公式">
+                        <p class="sns_item_name">公式Instagram</p>
+                        <p class="sns_item_account">@yakiniku_tamanoya</p>
+                    </figure>
+                </a>
             </div>
             <div class="sns_item">
-                <figure>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/bene_insta.png" alt="求人情報">
-                </figure>
+                <a href="https://www.instagram.com/bene_corp_recruit/" target="_blank"
+                    rel="noopener noreferrer">
+                    <figure>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/bene_insta.png" alt="求人情報">
+                    </figure>
+                </a>
                 <p class="sns_item_name">採用情報</p>
                 <p class="sns_item_account">@bene_corp_recruit</p>
             </div>

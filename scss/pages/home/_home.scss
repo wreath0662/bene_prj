@@ -513,7 +513,7 @@ html {
 .news {
     padding-bottom: 150px;
     @include mq(sp) {
-        padding-bottom: 100px;
+        padding-bottom: 60px;
     }
 
     &_head {
@@ -606,11 +606,19 @@ html {
             }
 
             .news_cat {
+                flex-shrink: 0;
+                display: inline-block;
+                width: 110px;
+                text-align: center;
                 margin-left: 15px;
                 font-size: clampVw(13, 15, 15, 1200);
                 padding: 7px 16px;
                 background: #f0f0f0;
                 border-radius: 3px;
+                @include mq(md) {
+                    padding: 5px 0;
+                    width: 95px;
+                }
                 @include mq(tb) {
                     margin-left: 8px;
                     padding: 4px 12px;

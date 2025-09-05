@@ -7,6 +7,15 @@
     width: 90%;
     max-width: 1390px;
     margin: 0 auto;
+    @include mq(sp) {
+        padding-top: 100px;
+    }
+
+    &_head {
+        @include mq(sp) {
+            width: 60%;
+        }
+    }
 
     .company_information {
         padding-top: 120px;
@@ -14,6 +23,10 @@
         @include mq(tb) {
             padding-top: 60px;
             padding-bottom: 60px;
+        }
+        @include mq(sp) {
+            padding-top: 40px;
+            padding-bottom: 40px;
         }
 
         &_inner {
@@ -75,6 +88,9 @@
 
     .company_message {
         padding: 120px 0;
+        @include mq(sp) {
+            padding: 30px 0;
+        }
 
         &_inner {
             display: flex;
@@ -102,7 +118,7 @@
 
         &_head {
             margin-bottom: 60px;
-            font-size: clampVw(16, 22, 24, 800);
+            font-size: clampVw(16, 22, 34, 800);
             font-weight: 700;
             line-height: 1.6;
             margin: 0 0 1.2rem;
@@ -110,20 +126,27 @@
                 margin-top: 60px;
                 margin-bottom: 30px;
             }
+            @include mq(sp) {
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
         }
 
         &_text {
             margin-bottom: 45px;
+            @include mq(sp) {
+                margin-bottom: 25px;
+            }
         }
 
         &_name {
-            font-size: 18px;
+            font-size: clampVw(14, 18, 18, 800);
             font-weight: 500;
             text-align: right;
 
             strong {
                 font-weight: 500;
-                font-size: clampVw(26, 35, 35, 1000);
+                font-size: clampVw(18, 26, 35, 1000);
                 margin-left: 10px;
             }
         }

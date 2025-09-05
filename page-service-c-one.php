@@ -154,17 +154,23 @@ get_header(); ?>
         <div class="sns_list">
 
             <div class="sns_item">
-                <figure>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-c-one/contents_insta.png" alt="Instagram公式">
-                    <p class="sns_item_name">公式Instagram</p>
-                    <p class="sns_item_account">@amusement_bar_<br>
-                        c_oneosaka</p>
-                </figure>
+                <a href="https://www.instagram.com/amusement_bar_c_oneosaka/" target="_blank"
+                    rel="noopener noreferrer">
+                    <figure>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/service-c-one/contents_insta.png" alt="Instagram公式">
+                        <p class="sns_item_name">公式Instagram</p>
+                        <p class="sns_item_account">@amusement_bar_<br class="sp-none">
+                            c_oneosaka</p>
+                    </figure>
+                </a>
             </div>
             <div class="sns_item">
-                <figure>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-c-one/bene_insta.png" alt="求人情報">
-                </figure>
+                <a href="https://www.instagram.com/bene_corp_recruit/" target="_blank"
+                    rel="noopener noreferrer">
+                    <figure>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/service-c-one/bene_insta.png" alt="求人情報">
+                    </figure>
+                </a>
                 <p class="sns_item_name">採用情報</p>
                 <p class="sns_item_account">@bene_corp_recruit</p>
             </div>

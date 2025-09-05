@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) exit;
 <?php get_header(); ?>
 
 <main class="company">
-    <figure class="mv_logo">
+    <figure class="company_head">
         <img src="<?= esc_url(get_theme_file_uri('/images/company/company_title.svg')); ?>" alt="Company">
     </figure>
 

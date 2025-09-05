@@ -8,6 +8,12 @@
         padding: 100px 0;
     }
 
+    &_title {
+        @include mq(sp) {
+            width: 60%;
+        }
+    }
+
     &_inner {
         width: 90%;
         max-width: 1390px;
@@ -41,6 +47,9 @@
             @include mq(md) {
                 grid-template-columns: repeat(2, 1fr); // 横2列
                 gap: 25px;
+            }
+            @include mq(sp) {
+                gap: 15px;
             }
 
             li {

@@ -6,8 +6,8 @@ get_header();
 <main class="news_archive">
     <div class="news_archive_inner">
         <!-- 左カラム：タイトル＋サイドナビ -->
-        <h2 class="news_archive_title">
-            <figure>
+        <h2>
+            <figure class="news_archive_title">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/archive/news_title.svg" alt="News">
             </figure>
         </h2>

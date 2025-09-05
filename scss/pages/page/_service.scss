@@ -347,6 +347,9 @@
         // T-HORSE
         .t-horsePhoto {
             margin-bottom: 120px;
+            @include mq(sp) {
+                margin-bottom: 60px;
+            }
         }
     }
 
@@ -393,9 +396,15 @@
                 text-align: center;
                 margin-top: 12px;
                 @include mq(sp) {
-                    max-width: 98px;
+                    max-width: 100px;
                     margin: 0 auto;
                 }
+            }
+        }
+
+        .sp-none {
+            @include mq(sp) {
+                display: none;
             }
         }
     }

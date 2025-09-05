@@ -26,6 +26,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include mq(sp) {
+        align-items: baseline;
+    }
 }
 
 .l-header_menu-btn {
@@ -183,6 +186,13 @@
 
     &_group {
         margin-bottom: 50px;
+        @include mq(sp) {
+            margin-bottom: 30px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     li {
@@ -203,5 +213,5 @@
     flex-direction: column;
     gap: 10px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: clampVw(15, 20, 20, 1400);
 }
