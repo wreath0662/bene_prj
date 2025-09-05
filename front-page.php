@@ -9,7 +9,7 @@ Template Name: フロントページ
 <!-- メインビジュアル -->
 <main class="h-mv">
 	<figure class="mv_logo">
-		<img src="<?= esc_url(get_theme_file_uri('/images/home/group_logo.svg')); ?>" alt="Bene Group">
+		<img src="<?= esc_url(get_theme_file_uri('/images/home/group_logo.png')); ?>" alt="Bene Group">
 	</figure>
 	<div class="mv_inner pc_only">
 

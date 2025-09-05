@@ -39,7 +39,7 @@ if (!defined('ABSPATH')) exit;
       <!-- ロゴ -->
       <div class="l-header_logo ">
         <a href="<?php echo esc_url(home_url('/')); ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/home/logo.svg" alt="株式会社BeneCorporation">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/home/logo.png" alt="株式会社BeneCorporation">
         </a>
       </div>
 
