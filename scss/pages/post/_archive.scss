@@ -4,7 +4,7 @@
 
 .news_archive {
     padding: 200px 0;
-    @include mq(md) {
+    @include mq(sp) {
         padding: 100px 0;
     }
 
