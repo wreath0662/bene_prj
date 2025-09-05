@@ -58,6 +58,9 @@
                     grid-template-columns: 1fr; // 1列に
                     row-gap: 0.4rem; // th と td の間隔
                     padding: 15px 0;
+                    @include mq(sp) {
+                        row-gap: 0;
+                    }
                 }
             }
 
@@ -68,6 +71,9 @@
                 text-align: left;
                 @include mq(tb) {
                     padding: 0.5rem 0;
+                }
+                @include mq(sp) {
+                    padding: 0.2rem 0;
                 }
             }
 
@@ -82,6 +88,9 @@
             td {
                 width: 655px;
                 font-weight: normal;
+                @include mq(sp) {
+                    width: auto;
+                }
             }
         }
     }

@@ -384,7 +384,7 @@
 
         &_item {
             &_name {
-                font-size: clampVw(14, 20, 32, 800);
+                font-size: clampVw(13, 20, 32, 800);
                 font-weight: bold;
                 text-align: center;
                 margin-top: 25px;
@@ -392,12 +392,14 @@
 
             &_account {
                 font-size: clampVw(12, 15, 20, 800);
-                font-weight: bold;
+                font-weight: normal;
                 text-align: center;
                 margin-top: 12px;
                 @include mq(sp) {
                     max-width: 100px;
-                    margin: 0 auto;
+                    margin-top: 5px;
+                    margin-right: auto;
+                    margin-left: auto;
                 }
             }
         }
@@ -406,6 +408,12 @@
             @include mq(sp) {
                 display: none;
             }
+        }
+    }
+
+    .sns_item_account.cOne_account {
+        @include mq(sp) {
+            max-width: none !important; // ← 念のため強制上書き
         }
     }
 

@@ -176,9 +176,10 @@ get_header(); ?>
                     <figure>
                         <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/bene_insta.png" alt="求人情報">
                     </figure>
+
+                    <p class="sns_item_name">採用情報</p>
+                    <p class="sns_item_account">@bene_corp_recruit</p>
                 </a>
-                <p class="sns_item_name">採用情報</p>
-                <p class="sns_item_account">@bene_corp_recruit</p>
             </div>
         </div>
     </section>

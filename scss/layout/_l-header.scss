@@ -147,6 +147,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     transition: right 0.3s ease;
     @include mq(sp) {
         width: 100vw;
@@ -213,5 +214,5 @@
     flex-direction: column;
     gap: 10px;
     font-weight: 400;
-    font-size: clampVw(15, 20, 20, 1400);
+    font-size: clampVw(18, 20, 20, 1400);
 }

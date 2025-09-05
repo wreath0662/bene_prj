@@ -53,7 +53,6 @@
                 padding: 1em 0;
                 @include mq(tb) {
                     flex-direction: column;
-                    border-bottom: 1px dashed #ccc;
                 }
                 @include mq(sp) {
                     padding: 0.75em 0;

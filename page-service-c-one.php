@@ -159,7 +159,7 @@ get_header(); ?>
                     <figure>
                         <img src="<?php echo get_template_directory_uri(); ?>/images/service-c-one/contents_insta.png" alt="Instagram公式">
                         <p class="sns_item_name">公式Instagram</p>
-                        <p class="sns_item_account">@amusement_bar_<br class="sp-none">
+                        <p class="sns_item_account cOne_account">@amusement_bar_<br class="sp-none">
                             c_oneosaka</p>
                     </figure>
                 </a>
@@ -170,9 +170,10 @@ get_header(); ?>
                     <figure>
                         <img src="<?php echo get_template_directory_uri(); ?>/images/service-c-one/bene_insta.png" alt="求人情報">
                     </figure>
+
+                    <p class="sns_item_name">採用情報</p>
+                    <p class="sns_item_account cOne_account">@bene_corp_recruit</p>
                 </a>
-                <p class="sns_item_name">採用情報</p>
-                <p class="sns_item_account">@bene_corp_recruit</p>
             </div>
         </div>
     </section>
