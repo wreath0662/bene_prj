@@ -149,7 +149,7 @@
         overflow-y: scroll;
         width: 100vw;
         justify-content: flex-start; // ← 上寄せに変更！
-        padding-top: 20%;
+        padding-top: 15%;
     }
 
     &.is-active {
@@ -213,5 +213,5 @@
     flex-direction: column;
     gap: 10px;
     font-weight: 400;
-    font-size: clampVw(18, 20, 20, 1400);
+    font-size: clampVw(16, 20, 20, 1400);
 }

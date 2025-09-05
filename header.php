@@ -62,6 +62,12 @@ if (!defined('ABSPATH')) exit;
                   <img src="<?php echo get_template_directory_uri(); ?>/images/home/menu_top.svg" alt="Top">
                 </figure>
               </a></li>
+            <li class="l-global-nav_list_group"><a href="<?php echo esc_url(home_url('/news')); ?>">
+                <figure>
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/menu_news.svg" alt="Top">
+                </figure>
+              </a></li>
+
             <li class="l-global-nav_list_group">
 
               <figure>
