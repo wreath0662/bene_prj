@@ -31,14 +31,49 @@ document.addEventListener("DOMContentLoaded", function () {
 /*-------------------------------------------*/
 /* Swiper スライダー
 /*-------------------------------------------*/
+// new Swiper("#serviceMvSlider", {
+//     loop: true,
+//     loopAdditionalSlides: 12, // ← 増やす（8→12）
+//     loopPreventsSliding: false,
+//     slidesPerView: "auto",
+//     spaceBetween: 10,
+//     centeredSlides: false,
+//     allowTouchMove: false,
+//     resistanceRatio: 0,
+
+//     freeMode: {enabled: true, momentum: false},
+
+//     speed: 6000, // ← 上げる（8000→10000）
+//     autoplay: {
+//         delay: 0,
+//         disableOnInteraction: false,
+//         waitForTransition: false,
+//         pauseOnMouseEnter: false,
+//         stopOnLastSlide: false,
+//     },
+
+//     // 追加：画像の読み込みタイミングでのコマ落ち防止
+//     preloadImages: false, // ← 追加
+//     updateOnImagesReady: false, // ← 追加
+//     observer: true,
+//     observeParents: true,
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
-    new Swiper(".h-service_slider", {
+    const el = document.getElementById("serviceMvSlider");
+    if (!el) return;
+
+    new Swiper("#serviceMvSlider", {
         loop: true,
-        slidesPerView: 1,
-        spaceBetween: 30,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+        effect: "fade", // ← フェード切り替え
+        speed: 2000, // フェード時間（ms）
+        autoplay: {
+            delay: 2000, // 4秒ごとに切り替え
+            disableOnInteraction: false,
+        },
+        pagination: {
+            // el: ".swiper-pagination", // 下部ドット
+            clickable: true,
         },
     });
 });

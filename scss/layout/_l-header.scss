@@ -10,7 +10,7 @@
     z-index: 1000;
     padding: 20px 60px;
 
-    @include mq(tb) {
+    @include mq(md) {
         padding: 5px 10px;
     }
     @include mq(sp) {
@@ -18,7 +18,8 @@
     }
 
     &_logo {
-        width: 30%;
+        max-width: 200px;
+        width: 100%;
     }
 }
 
@@ -26,6 +27,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.l-header_left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    @include mq(md) {
+        gap: 20px;
+    }
 }
 
 .l-header_menu-btn {
@@ -214,4 +224,92 @@
     gap: 10px;
     font-weight: 400;
     font-size: clampVw(16, 20, 20, 1400);
+}
+
+// 玉乃屋予約ボタン
+
+.sp_none {
+    @include mq(tb) {
+        display: none;
+    }
+}
+
+.tel_group {
+    margin-top: 10px;
+    display: flex;
+}
+
+.tel_icon {
+    margin-right: 5px;
+}
+
+.reserve_button {
+    display: inline-flex; /* ← 横並び */
+    align-items: center; /* ← 縦位置そろえ */
+    gap: 8px; /* ← アイコンと文字の間隔 */
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-family: serif;
+    font-size: 21px;
+    color: #fff;
+    background-color: #790a14;
+    text-decoration: none; /* ← 下線消し */
+    white-space: nowrap; /* ← 折り返し防止 */
+
+    img {
+        height: 18px;
+        width: auto;
+        display: block;
+    }
+
+    span {
+        display: inline-block;
+    }
+}
+
+.sp-sticky-cta {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0; /* ← 下に追従 */
+    display: none; /* PCは非表示 */
+    z-index: 10000;
+    height: 56px;
+    padding-bottom: env(safe-area-inset-bottom); /* iPhoneノッチ対策 */
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.12);
+
+    @include mq(tb) {
+        display: grid;
+    } /* SPだけ表示 */
+}
+
+.sp-sticky-cta__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1;
+    padding-bottom: max(0px, env(safe-area-inset-bottom));
+    img {
+        height: 18px;
+        width: auto;
+        display: block;
+    }
+}
+.sp-sticky-cta__btn--tel {
+    background: #000;
+}
+.sp-sticky-cta__btn--reserve {
+    background: #790a14;
+}
+
+/* 追従バーに隠れないようにSP時だけ下余白を確保 */
+@include mq(sp) {
+    body {
+        padding-bottom: calc(56px + env(safe-area-inset-bottom));
+    }
 }

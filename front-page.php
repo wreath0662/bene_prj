@@ -31,7 +31,7 @@ Template Name: フロントページ
 
 		<figure class="mv_image">
 
-			<img src="<?php echo get_template_directory_uri(); ?>/images/home/ceo.png" alt="代表">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/home/niconico.png" alt="代表">
 		</figure>
 	</div>
 
@@ -51,7 +51,7 @@ Template Name: フロントページ
 				<img src="<?php echo get_template_directory_uri(); ?>/images/home/c-one.png" alt="C-ONE">
 			</div>
 			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/home/ceo.png" alt="代表">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/home/niconico.png" alt="代表">
 			</div>
 
 		</div>

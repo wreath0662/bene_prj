@@ -35,12 +35,33 @@ if (!defined('ABSPATH')) exit;
   <?php body_class(); ?>>
   <header class="l-header">
     <div class="l-header_inner">
+      <div class="l-header_left">
+        <!-- ロゴ -->
+        <div class="l-header_logo ">
+          <a href="<?php echo esc_url(home_url('/')); ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/home/logo.png" alt="株式会社BeneCorporation">
+          </a>
+        </div>
 
-      <!-- ロゴ -->
-      <div class="l-header_logo ">
-        <a href="<?php echo esc_url(home_url('/')); ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/home/logo.png" alt="株式会社BeneCorporation">
-        </a>
+        <!-- 玉乃屋予約ボタン -->
+        <?php if (is_page('service-tamanoya')) : ?>
+          <div class="sp_none">
+            <p>ご予約・お問い合わせ</p>
+            <div class="tel_group">
+              <figure class="tel_icon">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/common/tel.png" alt="">
+              </figure>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/common/tel_number.png" alt="06-6214-0298">
+            </div>
+          </div>
+          <a class="reserve_button sp_none"
+            href="https://booking.resty.jp/webrsv/vacant/s021145801/25679"
+            target="_blank" rel="noopener">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/common/calendar.png" alt="" aria-hidden="true">
+            <span>Web予約はこちら</span>
+          </a>
+        <?php endif; ?>
+
       </div>
 
       <!-- ハンバーガーメニュー -->
@@ -112,4 +133,23 @@ if (!defined('ABSPATH')) exit;
           </ul>
       </nav>
     </div>
+
+    <!-- スマホのときの玉乃屋予約ボタン -->
+    <?php if (is_page('service-tamanoya')) : ?>
+      <nav class="sp-sticky-cta" aria-label="ページ下部の操作">
+        <a class="sp-sticky-cta__btn sp-sticky-cta__btn--tel" href="tel:0662140298">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/tel_white.png" alt="" aria-hidden="true">
+          <span>Tel</span>
+        </a>
+        <a class="sp-sticky-cta__btn sp-sticky-cta__btn--reserve"
+          href="https://booking.resty.jp/webrsv/vacant/s021145801/25679" target="_blank" rel="noopener">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/calendar.png" alt="" aria-hidden="true">
+          <span>Web予約</span>
+        </a>
+      </nav>
+    <?php endif; ?>
+
+
+
+
   </header>

@@ -49,6 +49,7 @@
         }
 
         .beneGroup {
+            z-index: 999;
             position: absolute;
             top: 500px;
             left: 3%;
@@ -76,6 +77,9 @@
             align-items: center;
             overflow: hidden;
             gap: 8px;
+            @include mq(sp) {
+                display: none;
+            }
 
             figure {
                 flex: 1 1 50%;
@@ -97,6 +101,19 @@
             }
         }
     }
+
+    /* 等速（加減速なし）に固定 */
+    #serviceMvSlider .swiper-wrapper {
+        transition-timing-function: linear !important; /* 追加① */
+        will-change: transform; /* 追加② */
+        width: 100% !important;
+    }
+    #serviceMvSlider img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } /* 追加③ */
 
     // コンセプト
 
@@ -215,6 +232,9 @@
             margin-left: 3%;
             @include mq(tb) {
                 margin-top: 10px;
+            }
+            @include mq(sp) {
+                margin-left: 0;
             }
         }
 
@@ -341,6 +361,85 @@
                 margin-top: 30px;
                 display: flex;
                 gap: 2px;
+            }
+        }
+
+        // 玉乃屋
+
+        .tamanoya_copy {
+            @include mq(sp) {
+                margin-left: 0;
+            }
+        }
+
+        .tamanoya_main_image {
+            display: block;
+            margin-left: calc(50% - 50vw);
+            width: 160%;
+            @include mq(sp) {
+                margin-left: 0;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+
+        .tamanoya_main_copy {
+            font-size: clampVw(22, 35, 35, 1500);
+            font-weight: bold;
+            line-height: 1.6;
+            @include mq(tb) {
+                font-size: 22px;
+                line-height: 1.4;
+            }
+            @include mq(sp) {
+                font-size: 22px;
+                text-align: center;
+                line-height: 1.4;
+            }
+        }
+
+        .tamanoya_sub_copy {
+            margin-top: 30px;
+            font-size: clampVw(15, 16, 16, 1400);
+            font-weight: bold;
+            line-height: 1.5;
+            @include mq(tb) {
+                margin-top: 20px;
+                font-size: 14px;
+                @include mq(sp) {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .tamanoya_question {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.5;
+            @include mq(md) {
+                font-size: clampVw(16, 18, 22, 900);
+            }
+            @include mq(sp) {
+                font-size: 16px;
+            }
+        }
+
+        .second_question {
+            margin-top: 35px;
+        }
+
+        .tamanoya_answer {
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 1.8;
+            @include mq(md) {
+                font-size: clampVw(14, 15, 16, 900);
+                margin-top: 30px;
+            }
+            @include mq(sp) {
+                margin-top: 25px;
+                font-size: 14px;
             }
         }
 

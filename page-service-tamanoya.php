@@ -25,14 +25,28 @@ get_header(); ?>
         </figure>
 
 
-        <div class="mv_image">
-            <figure class="sp_none">
+        <div class="mv_image sp_none">
+            <figure>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/service_mv1.jpg" alt="玉乃屋メインビジュアル1">
             </figure>
             <figure>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/service_mv2.jpg" alt="玉乃屋メインビジュアル2">
             </figure>
         </div>
+
+        <!-- スマホ用：Swiper -->
+        <div class="swiper sp_only" id="serviceMvSlider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/service_mv2.jpg" alt="玉乃屋メインビジュアル1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/service_mv1.jpg" alt="玉乃屋メインビジュアル2">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
     </section>
 
 
@@ -42,7 +56,6 @@ get_header(); ?>
 
         <div class="concept_text">
             <p class="concept_text_container">
-                少人数OK ! <br>
                 全席個室で2名～10名様までご利用可能。
             </p>
             <p class="concept_text_container">
@@ -71,7 +84,7 @@ get_header(); ?>
     <section class="staff">
         <div class="staff_wrapper">
             <div class="staff_item">
-                <figure class="staff_main_image">
+                <figure class="tamanoya_main_image">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/staff.jpg" alt="玉乃屋スタッフ写真">
                 </figure>
                 <div class="staff_title">
@@ -91,17 +104,18 @@ get_header(); ?>
                     </div>
                 </div>
 
-                <div class="staff_copy">
-                    <p class="staff_main_copy">“いらっしゃいませ”の<br>
-                        声がそろう瞬間が好き！</p>
-                    <p class="staff_sub_copy">一体感のある職場で、笑顔と元気を届けています。</p>
+                <div class="staff_copy tamanoya_copy">
+                    <p class="tamanoya_main_copy">極雌和牛× ワイン× 個室で味わう<br>
+                        ワンランク上の“Yakiniku”</p>
+                    <p class="tamanoya_sub_copy">大阪・ミナミの宗右衛門町で和牛とワインを味わうなら当店へ。プロが選ぶ極雌和牛をステーキ・焼肉・塊肉など様々な調理法を駆使した玉乃屋スタイルの「YAKINIKU」で提供いたします。</p>
                 </div>
             </div>
             <div class="staff_container">
                 <div class="staff_text">
-                    <p class="staff_question">お客様に対する接客方針はありますか？</p>
-                    <p class="staff_answer">私たちは「一組一組のお客様に寄り添うこと」を大切にしています。
-                        落ち着いた空間でゆったりとお食事を楽しんでいただけるよう、笑顔でのご対応や心配りを徹底しています。お料理のご説明やおすすめのご提案も行い、お客様に「また来たい」と思っていただける接客を心がけています。</p>
+                    <p class="tamanoya_question">素材にとことんこだわって</p>
+                    <p class="tamanoya_answer">当店では、数ある和牛の中でも月齢30か月以上の長期肥育で育てた未出産の雌牛を使用。肉本来の香りが高く、うま味や甘味も豊富に味わえるブランド牛です。その日一番のおすすめを心を込めてご提供致します。</p>
+                    <p class="tamanoya_question second_question">上質だからこその美味しさ</p>
+                    <p class="tamanoya_answer">「極雌和牛」は、低融点脂肪の赤身だからこそのとろける美味しさ、きめ細かくソフトで柔らかな肉質が特徴です。プロが認めたこだわりの和牛を焼肉・ステーキ・塊肉・焼き寿きなど多彩な調理法でお楽しみくださいませ。</p>
                 </div>
                 <figure class="staff_container_image">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/staff1.jpg" alt="スタッフ写真2">
@@ -110,9 +124,8 @@ get_header(); ?>
             </div>
             <div class="staff_container">
                 <div class="staff_text">
-                    <p class="staff_question">スタッフ同士やお店の雰囲気はどうですか？</p>
-                    <p class="staff_answer">スタッフ同士の仲が良く、チームワークを大切にしています。
-                        わからないことがあってもすぐに相談できる雰囲気で、新人の方も安心して働ける環境です。仕事中はしっかりと連携しつつ、休憩中や終業後は和やかに会話がはずむアットホームなお店です。</p>
+                    <p class="tamanoya_question">ワインで高める美味しさの相乗効果</p>
+                    <p class="tamanoya_answer">シャンパンやワインは約30種に及ぶラインナップを取り揃え、ソムリエが厳選した銘柄のみをご用意しております。ただ高級なだけではなく当店で仕入れる肉の質や料理に合うワインを選び合わせることで「うま味の相乗効果」が働き、より一層美味しくお肉をお楽しみいただくことができます。</p>
                 </div>
                 <figure class="staff_container_image">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/staff2.jpg" alt="スタッフ写真2">
@@ -121,8 +134,8 @@ get_header(); ?>
             </div>
             <div class="staff_container">
                 <div class="staff_text">
-                    <p class="staff_question">お客さまやこれから入社する方へメッセージを</p>
-                    <p class="staff_answer">玉乃屋は、料理や接客を通して「特別な時間」をお届けする場所です。
+                    <p class="tamanoya_question">お客さまやこれから入社する方へメッセージを</p>
+                    <p class="tamanoya_answer">玉乃屋は、料理や接客を通して「特別な時間」をお届けする場所です。
                         これから一緒に働く仲間にも、楽しみながら成長できる環境を用意しています。未経験でも安心して挑戦できるようにサポートしますので、ぜひ一緒にお店を盛り上げていきましょう。</p>
                 </div>
                 <figure class="staff_container_image">
@@ -259,7 +272,7 @@ get_header(); ?>
                     <table class="shopinfo_item">
                         <tr>
                             <th>住所</th>
-                            <td>大阪府大阪市中央区宗右衛門町5-28</td>
+                            <td>大阪府大阪市中央区宗右衛門町5-28 三笠会館2階</td>
                         </tr>
                         <tr>
                             <th>アクセス</th>
@@ -273,10 +286,12 @@ get_header(); ?>
                                 <div class="annotation">※月曜日が営業日の場合17：00〜24：00営業になります。</div>
                             </td>
 
-                        </tr>
+                        </tr>　
                         <tr>
                             <th>定休日</th>
-                            <td>不定休</td>
+                            <td>不定休<div class="annotation">※月曜はお休みとなる場合が多いです</div>
+                            </td>
+
                         </tr>
 
                         <tr>

@@ -16,8 +16,13 @@
             width: 60%;
         }
     }
+    &_mv {
+        margin-top: 45px;
+    }
 
-    .company_information {
+    // 企業理念
+
+    .company_philosophy {
         padding-top: 120px;
         padding-bottom: 120px;
         @include mq(tb) {
@@ -25,8 +30,144 @@
             padding-bottom: 60px;
         }
         @include mq(sp) {
-            padding-top: 40px;
-            padding-bottom: 40px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        &_inner {
+            display: flex;
+            justify-content: space-between;
+            @include mq(ml) {
+                flex-direction: column;
+            }
+        }
+
+        &_title {
+            display: block;
+            font-size: clampVw(24, 40, 40, 800);
+            font-weight: bold;
+            @include mq(ml) {
+                margin-bottom: 70px;
+            }
+            @include mq(sp) {
+                padding-top: 40px;
+                padding-bottom: 40px;
+                margin-bottom: 0;
+            }
+        }
+
+        &_item {
+            border-bottom: 1px solid #d3d3d3;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            max-width: 908px;
+            @include mq(tb) {
+                padding-top: 30px;
+                padding-bottom: 30px;
+                max-width: none;
+            }
+
+            &:first-of-type {
+                padding-top: 0;
+            }
+
+            .item_group {
+                line-height: 1.8;
+                padding-left: 6rem;
+                @include mq(tb) {
+                    padding-left: 0;
+                }
+            }
+
+            .item_head {
+                margin-top: 30px;
+                margin-bottom: 23px;
+                font-size: clampVw(16, 32, 32, 800);
+                font-weight: bold;
+                @include mq(sp) {
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .policy_group {
+            padding-left: 6rem;
+            @include mq(sp) {
+                padding-left: 0;
+            }
+
+            .policy_text {
+                padding-left: 4rem;
+                line-height: 1.6;
+                @include mq(sp) {
+                    padding-left: 0;
+                }
+            }
+
+            .policy_head {
+                margin-top: 40px;
+                position: relative;
+                padding-left: 40px;
+                @include mq(tb) {
+                    margin-top: 30px;
+                }
+                @include mq(sp) {
+                    padding-left: 20px;
+                }
+
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 24px;
+                    height: 28px;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: no-repeat center / contain;
+                    @include mq(sp) {
+                        width: 15px;
+                        height: 18px;
+                    }
+                }
+            }
+
+            &:nth-of-type(1) .policy_head::before {
+                background-image: url("./images/company/policy_1.svg");
+            }
+            &:nth-of-type(2) .policy_head::before {
+                background-image: url("./images/company/policy_2.svg");
+            }
+            &:nth-of-type(3) .policy_head::before {
+                background-image: url("./images/company/policy_3.svg");
+            }
+            &:nth-of-type(4) .policy_head::before {
+                background-image: url("./images/company/policy_4.svg");
+            }
+            &:nth-of-type(5) .policy_head::before {
+                background-image: url("./images/company/policy_5.svg");
+            }
+
+            .policy_group {
+                line-height: 1.8;
+                padding-left: 6rem;
+
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+    // 会社概要
+
+    .company_information {
+        padding-bottom: 120px;
+        @include mq(tb) {
+            padding-top: 0px;
+            padding-bottom: 60px;
+        }
+        @include mq(sp) {
+            padding-top: 0px;
         }
 
         &_inner {
@@ -40,8 +181,12 @@
         &_title {
             padding-top: 20px;
             display: block;
-            font-size: clampVw(20, 40, 40, 800);
+            font-size: clampVw(24, 40, 40, 800);
             font-weight: bold;
+            @include mq(sp) {
+                padding-top: 0px;
+                padding-bottom: 40px;
+            }
         }
 
         &_item {
@@ -95,10 +240,13 @@
         }
     }
 
+    // ご挨拶
+
     .company_message {
         padding: 120px 0;
-        @include mq(sp) {
-            padding: 30px 0;
+        @include mq(tb) {
+            padding-top: 90px;
+            padding-bottom: 80px;
         }
 
         &_inner {
@@ -113,7 +261,7 @@
         &_title {
             /* 左列：見出し */
             margin: 0;
-            font-size: clampVw(20, 40, 40, 800);
+            font-size: clampVw(24, 40, 40, 800);
             font-weight: 700;
             line-height: 1.2;
             align-self: start; /* 上揃え */
@@ -123,6 +271,16 @@
             max-width: 908px;
             font-size: clampVw(14, 18, 18, 800);
             line-height: 1.8;
+        }
+
+        &_image {
+            margin-bottom: 60px;
+            @include mq(tb) {
+                margin-bottom: 40px;
+            }
+            @include mq(sp) {
+                margin-bottom: 20px;
+            }
         }
 
         &_head {
@@ -136,15 +294,23 @@
                 margin-bottom: 30px;
             }
             @include mq(sp) {
-                margin-top: 30px;
+                margin-top: 40px;
                 margin-bottom: 20px;
             }
         }
 
         &_text {
             margin-bottom: 45px;
+
             @include mq(sp) {
                 margin-bottom: 25px;
+            }
+            p + p {
+                margin-top: 2em; // 好きな間隔に調整
+
+                @include mq(sp) {
+                    margin-top: 1.5em;
+                }
             }
         }
 
