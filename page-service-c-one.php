@@ -289,7 +289,7 @@ get_header(); ?>
                         </tr>
                         <tr>
                             <th>営業時間</th>
-                            <td>19:00～3:00 （料理L.O. 2:30 ドリンクL.O. 2:30）
+                            <td>21:00～5:00
                             </td>
 
                         </tr>
@@ -308,7 +308,7 @@ get_header(); ?>
                         </tr>
                         <tr>
                             <th>支払い方法</th>
-                            <td>現金・カード（VISA、Master、JCB、A MEX、Diners）<br>電子マネー（楽天Edy､WAON､Suica､PASMO､nanaco､ICOCA､iD､QUICPay）</td>
+                            <td>現金・カード（VISA、Master、JCB、A MEX、Diners）</td>
                         </tr>
                         <tr>
                             <th>席・設備</th>
