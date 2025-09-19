@@ -29,35 +29,26 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /*-------------------------------------------*/
-/* Swiper スライダー
+/* Swiper ホームのスライダー
 /*-------------------------------------------*/
-// new Swiper("#serviceMvSlider", {
-//     loop: true,
-//     loopAdditionalSlides: 12, // ← 増やす（8→12）
-//     loopPreventsSliding: false,
-//     slidesPerView: "auto",
-//     spaceBetween: 10,
-//     centeredSlides: false,
-//     allowTouchMove: false,
-//     resistanceRatio: 0,
+document.addEventListener("DOMContentLoaded", function () {
+    const serviceSlider = document.querySelector(".h-service_slider.swiper");
+    if (serviceSlider) {
+        new Swiper(serviceSlider, {
+            loop: true,
+            slidesPerView: 1, // 1枚ずつ見せたい場合
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".swiper-button-next, .h-service_customArrows .arrow-next",
+                prevEl: ".swiper-button-prev, .h-service_customArrows .arrow-prev",
+            },
+        });
+    }
+});
 
-//     freeMode: {enabled: true, momentum: false},
-
-//     speed: 6000, // ← 上げる（8000→10000）
-//     autoplay: {
-//         delay: 0,
-//         disableOnInteraction: false,
-//         waitForTransition: false,
-//         pauseOnMouseEnter: false,
-//         stopOnLastSlide: false,
-//     },
-
-//     // 追加：画像の読み込みタイミングでのコマ落ち防止
-//     preloadImages: false, // ← 追加
-//     updateOnImagesReady: false, // ← 追加
-//     observer: true,
-//     observeParents: true,
-// });
+/*-------------------------------------------*/
+/* 玉乃屋・C-ONEスマホ時フェード
+/*-------------------------------------------*/
 
 document.addEventListener("DOMContentLoaded", function () {
     const el = document.getElementById("serviceMvSlider");
