@@ -84,7 +84,7 @@ get_header(); ?>
     <section class="staff">
         <div class="staff_wrapper">
             <div class="staff_item">
-                <figure class="tamanoya_main_image">
+                <figure class="restaurant_main_image">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/service-tamanoya/staff.jpg" alt="玉乃屋スタッフ写真">
                 </figure>
                 <div class="staff_title">
@@ -104,10 +104,10 @@ get_header(); ?>
                     </div>
                 </div>
 
-                <div class="staff_copy tamanoya_copy">
-                    <p class="tamanoya_main_copy">極雌和牛× ワイン× 個室で味わう<br>
+                <div class="staff_copy restaurant_copy">
+                    <p class="restaurant_main_copy">極雌和牛× ワイン× 個室で味わう<br>
                         ワンランク上の“Yakiniku”</p>
-                    <p class="tamanoya_sub_copy">大阪・ミナミの宗右衛門町で和牛とワインを味わうなら当店へ。プロが選ぶ極雌和牛をステーキ・焼肉・塊肉など様々な調理法を駆使した玉乃屋スタイルの「YAKINIKU」で提供いたします。</p>
+                    <p class="restaurant_sub_copy">大阪・ミナミの宗右衛門町で和牛とワインを味わうなら当店へ。プロが選ぶ極雌和牛をステーキ・焼肉・塊肉など様々な調理法を駆使した玉乃屋スタイルの「YAKINIKU」で提供いたします。</p>
                 </div>
             </div>
             <div class="staff_container">

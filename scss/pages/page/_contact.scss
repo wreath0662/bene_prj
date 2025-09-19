@@ -409,8 +409,16 @@
 
     // プライバシーポリシー
 
+    .purpose_title {
+        padding-top: 80px;
+    }
+
     .purpose-list {
-        font-size: clampVw(14, 16, 18, 1000);
+        padding-top: 30px;
+    }
+
+    .policy_head {
+        font-size: clampVw(16, 18, 18, 1000);
         margin-top: 30px;
         margin-bottom: 30px;
         line-height: 2;
@@ -419,19 +427,20 @@
         }
     }
 
-    .policy-list {
-        font-size: clampVw(14, 16, 18, 1000);
+    .policy_text {
+        font-size: clampVw(14, 16, 16, 1000);
         line-height: 1.8;
-        padding: 3rem;
-        border: 1px solid #000;
-        @include mq(sp) {
-            line-height: 1.6;
-            padding: 1.5rem;
-        }
+    }
 
-        ol {
-            list-style: decimal;
-            padding-left: 1.6em;
-        }
+    .notes {
+        margin-top: 20px;
+        line-height: 1.6;
+    }
+
+    .policy_list {
+        margin-top: 10px;
+        line-height: 1.8;
+        list-style-type: disc;
+        padding-left: 1.5em;
     }
 }

@@ -309,7 +309,7 @@
             position: relative;
             padding-left: 1.5em;
             font-size: 24px;
-            font-weight: 500;
+            font-weight: 700;
             line-height: 1.5;
             @include mq(md) {
                 font-size: clampVw(16, 18, 22, 900);
@@ -364,15 +364,15 @@
             }
         }
 
-        // 玉乃屋
+        // 玉乃屋 C-ONE
 
-        .tamanoya_copy {
+        .restaurant_copy {
             @include mq(sp) {
                 margin-left: 0;
             }
         }
 
-        .tamanoya_main_image {
+        .restaurant_main_image {
             display: block;
             margin-left: calc(50% - 50vw);
             width: 160%;
@@ -383,7 +383,7 @@
             }
         }
 
-        .tamanoya_main_copy {
+        .restaurant_main_copy {
             font-size: clampVw(22, 35, 35, 1500);
             font-weight: bold;
             line-height: 1.6;
@@ -398,7 +398,7 @@
             }
         }
 
-        .tamanoya_sub_copy {
+        .restaurant_sub_copy {
             margin-top: 30px;
             font-size: clampVw(15, 16, 16, 1400);
             font-weight: bold;

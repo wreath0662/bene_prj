@@ -27,12 +27,28 @@ get_header(); ?>
 
         <div class="mv_image">
             <figure class="sp_none">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/service-c-one/service_mv1.jpg" alt="玉乃屋メインビジュアル1">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service-c-one/service_mv1.jpg" alt="C-ONEメインビジュアル1">
             </figure>
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/service-c-one/service_mv2.jpg" alt="玉乃屋メインビジュアル2">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service-c-one/service_mv2.jpg" alt="C-ONEメインビジュアル2">
             </figure>
         </div>
+
+        <!-- スマホ用：Swiper -->
+        <div class="swiper sp_only" id="serviceMvSlider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-c-one/service_mv2.jpg" alt="C-ONEメインビジュアル1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-c-one/service_mv1.jpg" alt="C-ONEメインビジュアル2">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+
     </section>
 
 
@@ -97,15 +113,18 @@ get_header(); ?>
                 <div class="staff_copy">
                     <p class="staff_main_copy">フレンドリーで<br>
                         笑い声が絶えない職場</p>
-                    <p class="staff_sub_copy">お客様にもスタッフにも、笑顔が広がるC-ONEの雰囲気。</p>
+                    <p class="staff_sub_copy">お客様にもスタッフにも、笑顔が広がるお店。</p>
                 </div>
             </div>
             <div class="staff_container">
                 <div class="staff_text">
                     <p class="staff_question">お客様に対する接客方針はありますか？</p>
-                    <p class="staff_answer">お客様一人ひとりに合った距離感を大切にしています。
-                        盛り上がりたい方には元気に、静かに飲みたい方には落ち着いて。
-                        その時の気分に合わせて楽しんでいただけるよう心がけています。</p>
+                    <p class="staff_answer">C-ONEでは、お客様一人ひとりに寄り添う接客を大切にしています。
+                        盛り上がりたい方には元気に、落ち着いて飲みたい方には静かに。
+                        その日の気分に合わせて、心地よく過ごせる時間を心がけています。
+
+                        ベーネグループの「食とアミューズメントを通じて地域に貢献する」という想いを、
+                        この空間でも大切にしています。</p>
                 </div>
                 <figure class="staff_container_image">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/service-c-one/staff1.jpg" alt="スタッフ写真2">
@@ -115,7 +134,10 @@ get_header(); ?>
             <div class="staff_container">
                 <div class="staff_text">
                     <p class="staff_question">スタッフ同士やお店の雰囲気はどうですか？</p>
-                    <p class="staff_answer">スすごくフレンドリーで、笑い声が絶えません。仕事終わりにみんなでダーツやカラオケを楽しむことも多いです。上下関係が厳しい雰囲気はなく、仲間という感じで働けます。</p>
+                    <p class="staff_answer">スタッフ同士はとても仲が良く、常に笑顔と笑い声が絶えない職場です。
+                        年齢や経験に関係なくフラットな関係性で、上下関係に縛られるような堅苦しさはありません。
+                        新しく入ってくるスタッフもすぐに馴染める、温かい雰囲気のある職場です。
+                        「仲間」として支え合えるからこそ、楽しく、長く働ける環境だと思います。</p>
                 </div>
                 <figure class="staff_container_image">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/service-c-one/staff2.jpg" alt="スタッフ写真2">
@@ -124,8 +146,13 @@ get_header(); ?>
             </div>
             <div class="staff_container">
                 <div class="staff_text">
-                    <p class="staff_question">お客さまやこれから入社する方へメッセージを</p>
-                    <p class="staff_answer">C-ONEは遊ぶのも飲むのも楽しめるバーです。初めての方も緊張せず、気軽に扉を開けてみてください。一緒に楽しい時間を過ごしましょう！</p>
+                    <p class="staff_question">お客さまやこれから入社する方へ</p>
+                    <p class="staff_answer">C-ONEは、お酒を飲むだけでなく、“自分らしく過ごせる時間”を楽しめる場所です。
+                        ひとりでもグループでも、気軽に扉を開けていただけたら嬉しいです。
+
+                        私たちが大切にしているのは、地域の中で、ふっと心がほどけるような非日常の演出。
+                        それはベーネグループの想いでもあります。
+                        この場所が、あなたにとっての“特別な時間”になれば幸いです！</p>
                 </div>
                 <figure class="staff_container_image">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/service-c-one/staff3.jpg" alt="スタッフ写真2">
