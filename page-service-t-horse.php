@@ -107,7 +107,7 @@ get_header(); ?>
             <div class="staff_container">
                 <div class="staff_text">
                     <p class="staff_question">スタッフ同士やお店の雰囲気はどうですか？</p>
-                    <p class="staff_answer">小規模だからこそ風通しがよく、スタッフ全員が意見を出し合える雰囲気です。車が好きなメンバーが集まっているので、オークションの情報交換や新しい車種の話題で盛り上がることも多いです。堅苦しさはなく、前向きに挑戦できる環境です。</p>
+                    <p class="staff_answer">風通しがよく、スタッフ全員が意見を出し合える雰囲気です。車が好きなメンバーが集まっているので、オークションの情報交換や新しい車種の話題で盛り上がることも多いです。堅苦しさはなく、前向きに挑戦できる環境です。</p>
                 </div>
                 <figure class="staff_container_image">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/staff2.jpg" alt="スタッフ写真2">
