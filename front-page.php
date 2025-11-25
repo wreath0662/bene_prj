@@ -256,7 +256,7 @@ Template Name: フロントページ
 			</div>
 
 			<!-- マイナビバイト -->
-			<div class="recruit_links_group">
+			<!-- <div class="recruit_links_group">
 				<figure class="recruit_links_image">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/home/mynavi_logo.png" alt="マイナビバイト">
 				</figure>
@@ -268,7 +268,7 @@ Template Name: フロントページ
 					<span>C-ONEの求人情報を見る</span>
 					<img class="recruit_btn_arrow" src="<?php echo get_template_directory_uri(); ?>/images/home/arrow.svg" alt="矢印">
 				</a>
-			</div>
+			</div> -->
 		</div>
 
 	</div>

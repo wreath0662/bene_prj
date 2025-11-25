@@ -437,7 +437,7 @@ html {
     padding: 200px 0;
     text-align: center;
     @include mq(sp) {
-        padding: 100px 0;
+        padding: 100px 0 80px;
     }
 
     &_inner {
@@ -471,8 +471,8 @@ html {
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
-        gap: 40px;
+        justify-content: center;
+        gap: 10%;
         @include mq(sp) {
             flex-direction: column;
             gap: 20px;

@@ -117,7 +117,7 @@ if (!defined('ABSPATH')) exit;
                     rel="noopener noreferrer">- Indeed</a></li>
                 <li><a href="https://xn--pckua2a7gp15o89zb.com/cmp/2429-6417"
                     target="_blank" rel="noopener noreferrer">- 求人ボックス</a></li>
-                <li><a href="#">- マイナビバイト</a></li>
+                <!-- <li><a href="#">- マイナビバイト</a></li> -->
               </ul>
             </li>
             <li class="l-global-nav_list_group">
