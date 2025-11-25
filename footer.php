@@ -33,16 +33,27 @@
                         </figure>
                     </a>
                     <ul>
-                        <a href="">
-                            <li>- Indeed</li>
-                        </a>
-                        <a href="">
-                            <li>- 求人ボックス</li>
-                        </a>
-                        <a href="">
-                            <li>- マイナビバイト</li>
-                        </a>
+                        <li>
+                            <a href="https://jp.indeed.com/cmp/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%EF%BD%82%EF%BD%85%EF%BD%8E%EF%BD%85-%EF%BC%A3%EF%BD%8F%EF%BD%92%EF%BD%90%EF%BD%8F%EF%BD%92%EF%BD%81%EF%BD%94%EF%BD%89%EF%BD%8F%EF%BD%8E?from=gnav-one-host&hl=ja&co=JP"
+                                target="_blank" rel="noopener noreferrer">
+                                - Indeed
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://xn--pckua2a7gp15o89zb.com/cmp/2429-6417"
+                                target="_blank" rel="noopener noreferrer">
+                                - 求人ボックス
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                - マイナビバイト
+                            </a>
+                        </li>
                     </ul>
+
                 </div>
 
                 <div class="footer_block footer_block_third">

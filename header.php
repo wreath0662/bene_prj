@@ -19,7 +19,8 @@ if (!defined('ABSPATH')) exit;
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700+JP:wght@400;500;600;700;&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Zen+Old+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <?php wp_head(); ?>
 </head>
 
@@ -114,7 +115,8 @@ if (!defined('ABSPATH')) exit;
               <ul class="detail_menu">
                 <li><a href="https://jp.indeed.com/cmp/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%EF%BD%82%EF%BD%85%EF%BD%8E%EF%BD%85-%EF%BC%A3%EF%BD%8F%EF%BD%92%EF%BD%90%EF%BD%8F%EF%BD%92%EF%BD%81%EF%BD%94%EF%BD%89%EF%BD%8F%EF%BD%8E?from=gnav-one-host&hl=ja&co=JP" target="_blank"
                     rel="noopener noreferrer">- Indeed</a></li>
-                <li><a href="#">- 求人ボックス</a></li>
+                <li><a href="https://xn--pckua2a7gp15o89zb.com/cmp/2429-6417"
+                    target="_blank" rel="noopener noreferrer">- 求人ボックス</a></li>
                 <li><a href="#">- マイナビバイト</a></li>
               </ul>
             </li>
