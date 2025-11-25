@@ -11,12 +11,12 @@ get_header(); ?>
     <section class="mv">
         <div class="mv_inner">
             <figure class="mv_logo">
-                <img src="<?= esc_url(get_theme_file_uri('/images/service-t-horse/service_logo.svg')); ?>" alt="玉乃屋ロゴ">
+                <img src="<?= esc_url(get_theme_file_uri('/images/service-t-horse/service_logo.svg')); ?>" alt="T-HORSEロゴ">
             </figure>
             <div class="mv_copy">
-                <p>理想の一台に出会えるのは</p>
-                <p>全国オークション×プロ代行</p>
-                <p>購入から納車までワンストップ</p>
+                <p>理想の一台に出会える</p>
+                <p>カーライフの専属パートナー</p>
+                <p>購入からメンテナンスまで</p>
             </div>
         </div>
 
@@ -27,34 +27,44 @@ get_header(); ?>
 
         <div class="mv_image">
             <figure class="sp_none">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/service_mv1.jpg" alt="玉乃屋メインビジュアル1">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/service_mv1.jpg" alt="T-HORSEメインビジュアル1">
             </figure>
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/service_mv2.jpg" alt="玉乃屋メインビジュアル2">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/service_mv2.jpg" alt="T-HORSEメインビジュアル2">
             </figure>
         </div>
-    </section>
 
+        <!-- スマホ用：Swiper -->
+        <div class="swiper sp_only" id="serviceMvSlider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/service_mv2.jpg" alt="T-HORSEメインビジュアル1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/service_mv1.jpg" alt="T-HORSEメインビジュアル2">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    　
 
     <!-- コンセプト -->
     <section class="concept">
-        <h2 class="concept_title">全国オークション対応<br>安心して選ぶ理想の1台を</h2>
+        <h2 class="concept_title t-horse_title">10年以上の経験とネットワークを活かし、<br>お客様にとって「本当に価値ある一台」を<br>お届けいたします</h2>
 
-        <div class="concept_text">
+        <div class="concept_text t-horse_text">
             <p class="concept_text_container">
-                初めての方でも安心！ <br>
-                プロがご希望に合った車両を代行落札いたします。
+                中古車流通の知見に基づき、希少車から、コストパフォーマンスに優れた車両まで幅広くご提案。
             </p>
             <p class="concept_text_container">
-                店頭に並ばない希少車や、コストを抑えたお得な車まで幅広く対応。<br>
-                中間マージンを省いた透明性のある価格でご提供できるのもポイントです。
+                単に車を「買う」ではなく、ライフスタイルや用途、維持コストまで踏まえた最適な選択をサポートします。
             </p>
             <p class="concept_text_container">
-                落札後は名義変更・車検・整備・納車までトータルでサポート。
+                購入後も、整備・車検・各種メンテナンス・保険相談までワンストップで対応。日々のケアから万が一のトラブル時まで、安心して頼れるパートナーとしてお付き合いさせていただきます。
             </p>
             <p class="concept_text_container">
-                安心と納得のサービスで、<br>
-                長くお付き合いいただけます。
+                あなたのカーライフの価値を最大化する、長く寄り添うモビリティパートナーです。
             </p>
         </div>
         <figure class="concept_image">
@@ -89,15 +99,18 @@ get_header(); ?>
                 </div>
 
                 <div class="staff_copy">
-                    <p class="staff_main_copy">安心と信頼を届ける<br>
-                        オークション代行</p>
-                    <p class="staff_sub_copy">お客様に最適な一台を見つけることが、私たちの使命です。</p>
+                    <p class="staff_main_copy">カーライフに寄り添う<br>
+                        あなた専属の相談相手</p>
+                    <p class="staff_sub_copy">理想の一台のご提案から、乗り続けるためのケアまで<br>安心して任せられる存在を目指します</p>
                 </div>
             </div>
             <div class="staff_container">
                 <div class="staff_text">
                     <p class="staff_question">お客様に対する接客方針はありますか？</p>
-                    <p class="staff_answer">車は一台一台に個性があり、お客様が求める条件もそれぞれ異なります。だからこそ「ご予算・用途・好み」に合わせた最適なご提案を心がけています。オークションの専門知識を活かし、安心して任せていただけるよう誠実に対応しています。</p>
+                    <p class="staff_answer">クルマは、ただの移動手段ではなく、日々の暮らしに深く関わる存在です。
+                        だからこそ、まずはお客様のお話をしっかり伺い、ライフスタイルや用途、将来的な維持コストまで踏まえたうえで、無理のない選択肢をご提案しています。
+                        「売りたい車をすすめる」のではなく、
+                        「お客様が安心して長く乗れる一台」を一緒に選ぶ。</p>
                 </div>
                 <figure class="staff_container_image">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/service-t-horse/staff1.jpg" alt="スタッフ写真2">
@@ -116,7 +129,7 @@ get_header(); ?>
             </div>
             <div class="staff_container">
                 <div class="staff_text">
-                    <p class="staff_question">お客さまやこれから入社する方へメッセージを</p>
+                    <p class="staff_question">T-HORSEが支持される理由とは？</p>
                     <p class="staff_answer">T-HORSEは「安心して車を購入できるオークション代行サービス」を目指しています。初めてオークションに挑戦する方も、車が好きで仕事にしたい方も大歓迎です。信頼を第一に、お客様にとって一番のパートナーであり続けたいと思っています。</p>
                 </div>
                 <figure class="staff_container_image">

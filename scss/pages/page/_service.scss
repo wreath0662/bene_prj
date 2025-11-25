@@ -130,6 +130,10 @@
             }
         }
 
+        .t-horse_title {
+            font-size: clampVw(18, 24, 26, 1400);
+        }
+
         &_text {
             max-width: 335px;
             margin: 0 auto;
@@ -138,6 +142,11 @@
                 max-width: 270px;
                 font-size: 14px;
             }
+        }
+
+        .t-horse_text {
+            width: 85%;
+            max-width: 359px;
         }
 
         &_text_container {
@@ -622,4 +631,8 @@
             }
         }
     }
+}
+
+#serviceMvSlider .swiper-pagination {
+    display: none !important;
 }

@@ -78,17 +78,18 @@ html {
             transition-timing-function: linear !important; // ← なめらかに
         }
 
-        &.swiper-container {
+        &.swiper {
             width: 70%;
             display: none;
 
             @include mq(sp) {
                 display: block;
+                width: 100%;
             }
         }
 
         // 既存のPC用 `.mv_inner` を非表示にする
-        &:not(.swiper-container) {
+        &:not(.swiper) {
             @include mq(sp) {
                 display: none;
             }
@@ -96,7 +97,7 @@ html {
 
         .swiper-slide {
             text-align: center;
-            width: 70%;
+            width: 60%;
             img {
                 margin: 0 auto;
             }

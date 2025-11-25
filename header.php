@@ -100,7 +100,9 @@ if (!defined('ABSPATH')) exit;
                 <li><a href="<?php echo esc_url(home_url('/service-t-horse')); ?>">- GARAGE T-HORSE</a></li>
                 <li><a href="<?php echo esc_url(home_url('/service-c-one')); ?>">- BAR C-ONE</a></li>
                 <li><a href="<?php echo esc_url(home_url('/service-kerandon')); ?>">- ケランドン</a></li>
-                <li><a href="<?php echo esc_url(home_url('/service-c-one')); ?>">- ニコニコレンタカー</a></li>
+                <li> <a href="https://www.2525r.com/osaka/osaka/naniwa/store-01719-001.html" target="_blank" rel="noopener noreferrer">
+                    - ニコニコレンタカー
+                  </a></li>
               </ul>
             </li>
             <li class="l-global-nav_list_group">

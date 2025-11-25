@@ -5,16 +5,22 @@
 
 function add_files()
 {
+    // CSS
     wp_enqueue_style('style', get_template_directory_uri() . '/style.css', array(), '1.0.0', 'all');
-    wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css', array(), '1.0.0', 'all');
+    wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css', array(), '8.0.0', 'all');
+
+    // JSライブラリ
     wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js', array(), false, true);
     wp_enqueue_script('gsap', 'https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js', array(), false, true);
-    wp_enqueue_script('common', get_template_directory_uri() . '/js/common.js', array('swiper'), false, true);
-    wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array(), false, true);
+
+    // テーマJS
+    wp_enqueue_script('common', get_template_directory_uri() . '/js/concat/common.js', array('swiper'), false, true);
+    wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('swiper', 'common'), false, true);
 }
-
-
 add_action('wp_enqueue_scripts', 'add_files');
+
+
+
 
 /*-------------------------------------------*/
 /*  削除関連

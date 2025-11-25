@@ -27,12 +27,26 @@ get_header(); ?>
 
         <div class="mv_image">
             <figure class="sp_none">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/service-kerandon/service_mv1.jpg" alt="玉乃屋メインビジュアル1">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service-kerandon/service_mv1.jpg" alt="ケランドンメインビジュアル1">
             </figure>
             <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/service-kerandon/service_mv2.jpg" alt="玉乃屋メインビジュアル2">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/service-kerandon/service_mv2.jpg" alt="ケランドンメインビジュアル2">
             </figure>
         </div>
+
+        <!-- スマホ用：Swiper -->
+        <div class="swiper sp_only" id="serviceMvSlider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-kerandon/service_mv2.jpg" alt="ケランドンメインビジュアル1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/service-kerandon/service_mv1.jpg" alt="ケランドンメインビジュアル2">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
     </section>
 
 
@@ -170,7 +184,7 @@ get_header(); ?>
                 <a href="https://www.instagram.com/bene_corp_recruit/" target="_blank"
                     rel="noopener noreferrer">
                     <figure>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/service-kerandon/bene_insta.png" alt="求人情報">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/service-c-one/bene_insta.png" alt="求人情報">
                     </figure>
 
                     <p class="sns_item_name">採用情報</p>

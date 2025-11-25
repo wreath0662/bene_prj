@@ -19,7 +19,8 @@
                         <a href="<?php echo esc_url(home_url('/service-kerandon')); ?>">
                             <li>- ケランドン</li>
                         </a>
-                        <a href="">
+                        <a href="https://www.2525r.com/osaka/osaka/naniwa/store-01719-001.html " target="_blank"
+                            rel="noopener noreferrer">
                             <li>- ニコニコレンタカー</li>
                         </a>
                     </ul>

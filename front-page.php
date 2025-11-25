@@ -36,7 +36,7 @@ Template Name: フロントページ
 	</div>
 
 	<!-- スマホのときのスライダー -->
-	<div class="mv_inner swiper-container sp_only">
+	<div class="mv_inner swiper sp_only">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/home/t-horse.png" alt="T-HORSE">

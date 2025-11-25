@@ -10,11 +10,11 @@ const header = document.querySelector("header");
 /* Swiper MV
 /*-------------------------------------------*/
 
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("load", function () {
     const isSP = window.matchMedia("(max-width: 576px)").matches;
 
     if (isSP) {
-        new Swiper(".mv_inner.swiper-container", {
+        new Swiper(".mv_inner.swiper", {
             loop: true,
             centeredSlides: true,
             slidesPerView: "auto",
@@ -50,25 +50,35 @@ document.addEventListener("DOMContentLoaded", function () {
 /* 玉乃屋・C-ONEスマホ時フェード
 /*-------------------------------------------*/
 
-document.addEventListener("DOMContentLoaded", function () {
+function initTamanoyaSwiper() {
     const el = document.getElementById("serviceMvSlider");
     if (!el) return;
 
-    new Swiper("#serviceMvSlider", {
-        loop: true,
-        effect: "fade", // ← フェード切り替え
-        speed: 2000, // フェード時間（ms）
-        autoplay: {
-            delay: 2000, // 4秒ごとに切り替え
-            disableOnInteraction: false,
-        },
-        pagination: {
-            // el: ".swiper-pagination", // 下部ドット
-            clickable: true,
-        },
-    });
-});
+    // 既存のSwiperインスタンスを破棄して再作成
+    if (el.swiper) {
+        el.swiper.destroy(true, true);
+    }
 
+    // 表示されているときだけ初期化
+    if (window.matchMedia("(max-width: 576px)").matches) {
+        new Swiper("#serviceMvSlider", {
+            loop: true,
+            effect: "fade",
+            speed: 2000,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: "#serviceMvSlider .swiper-pagination",
+                clickable: true,
+            },
+        });
+    }
+}
+
+window.addEventListener("load", initTamanoyaSwiper);
+window.addEventListener("resize", initTamanoyaSwiper);
 /*-------------------------------------------*/
 /* フェードアニメーション
 /*-------------------------------------------*/
