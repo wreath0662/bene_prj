@@ -256,7 +256,7 @@ get_header(); ?>
                     <table class="shopinfo_item">
                         <tr>
                             <th>住所</th>
-                            <td>大阪府摂津市新在家1-22-46</td>
+                            <td>大阪府摂津市鳥飼上5-4-13</td>
                         </tr>
                         <tr>
                             <th>アクセス</th>
@@ -275,7 +275,7 @@ get_header(); ?>
 
                         <tr>
                             <th>電話番号</th>
-                            <td>06-6379-3925</td>
+                            <td>072-665-5930</td>
                         </tr>
 
 
